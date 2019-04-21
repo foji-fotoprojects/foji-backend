@@ -161,6 +161,12 @@ class Project extends ActiveRecord
         return $this->hasMany(ProjectCalendar::className(), ['project_id' => 'id']);
     }
 
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getUploadPhoto(){
+        return $this->hasMany(Photo::className(), ['project_id' => 'id']);
+    }
 
     /**
      * @return \yii\db\ActiveQuery

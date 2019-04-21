@@ -16,11 +16,11 @@ return [
             'enableCsrfValidation' => false,
             'csrfParam' => '_csrf-frontend',
             'parsers' => [
-                'application/json' => 'yii\web\JsonParser',
+                'application/json' => \yii\web\JsonParser::class,
             ]
         ],
         'response' => [
-           // 'format' => 'json',
+            // 'format' => 'json',
             'formatters' => [
                 \yii\web\Response::FORMAT_JSON => [
                     'class' => 'yii\web\JsonResponseFormatter',
@@ -53,7 +53,13 @@ return [
             'enableStrictParsing' => true,
             'showScriptName' => false,
             'rules' => [
-                ['class' => 'yii\rest\UrlRule', 'controller' => 'project'],
+                [
+                    'class' => yii\rest\UrlRule::class,
+                    'controller' => [
+                        'project',
+                        'photo',
+                        ]
+                ],
 //                'signup' => 'site/signup',
 //                'login' => 'site/login',
 //                'logout' => 'site/logout',
