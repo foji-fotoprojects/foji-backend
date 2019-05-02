@@ -31,23 +31,32 @@ class PhotoController extends ActiveController
     }
 
     //public function actions()
-   // {
-     //   $actions = parent::actions();
-   //    $actions['index']['prepareDataProvider'] = [$this, 'prepareDataProvider'];
+    // {
+    //   $actions = parent::actions();
+    //    $actions['index']['prepareDataProvider'] = [$this, 'prepareDataProvider'];
     //    return $actions;
     //}
 
     public function actionCreate()
     {
         $model = new UploadPhoto();
-        var_dump($_FILES);
-        if ($model->load(\Yii::$app->request->post(), '') && $model->save()) {
-            $model->image = UploadedFile::getInstancesByName('image');
+        //var_dump($model); exit;
 
+        if (\Yii::$app->request->isPost) {
+            $model->load(\Yii::$app->request->post(), '');
+            $model->save();
 
+            $file = UploadedFile::getInstance($model, 'image');
+            foreach ($file as $file){
+                $path=\Yii::getAlias('@frontend'). '/uploads' . $file->name;
+                $file->saveAs($path);
+            }
+            //$model->image = UploadedFile::getInstances($model, 'image');
+            //$model->upload();
 
-            return $model->upload() ?: $model;
         }
-        return $model->save();
+
+        return $model;
     }
+
 }

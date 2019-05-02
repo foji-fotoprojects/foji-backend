@@ -3,7 +3,6 @@
 namespace common\models;
 
 use yii;
-use common\models\query\PhotoQuery;
 use yii\web\UploadedFile;
 use yii\db\ActiveRecord;
 
@@ -32,7 +31,7 @@ class UploadPhoto extends ActiveRecord
      */
     public static function tableName()
     {
-        return '{{photo}}';
+        return 'photo';
     }
 
     public function rules()
@@ -41,7 +40,7 @@ class UploadPhoto extends ActiveRecord
             //[['project_id', 'photo'], 'required'],
             [['project_id', 'active_photo', 'main_photo'], 'integer'],
             [['created_at'], 'safe'],
-            [['photo'], 'file', 'skipOnEmpty' => false, 'extensions' => 'jpg, jpeg, gif, png', 'maxFiles' => 5],
+            [['image'], 'file', 'skipOnEmpty' => false, 'extensions' => 'jpg, jpeg, gif, png'],
             [['project_id'], 'exist', 'skipOnError' => true, 'targetClass' => Project::className(), 'targetAttribute' => ['task_id' => 'id']],
 
         ];
@@ -55,7 +54,7 @@ class UploadPhoto extends ActiveRecord
         return [
             'id' => 'ID',
             'project_id' => 'Project ID',
-            'photo' => 'Photo',
+            'image' => 'Image',
             'active_photo' => 'Active Photo',
             'main_photo' => 'Main Photo',
             'created_at' => 'Created At',
@@ -74,28 +73,21 @@ class UploadPhoto extends ActiveRecord
     {
         if ($this->validate()) {
 
-            foreach ($this->image as $item) {
-
-                $baseName = $this->image->getBaseName() . "." . $this->image->getExtension();
-
-                $fileName = '@imgPath' . $baseName;
-
-                $item->saveAs(Yii::getAlias($fileName));
-
-                //$this->image->saveAs(Yii::getAlias('@imgPath') . $this->image->photo . '.' . $this->image->extension);
-            }
-            return true;
-        } else {
-            return false;
+            $filename = $this->image->getBaseName() . "." . $this->image->getExtension();
+            //var_dump($filename); exit;
+            return $this->image->saveAs(Yii::getAlias('@webroot/uploads/') . $filename);
+            //var_dump($filename);  exit;
         }
+        return false;
     }
 
-    /*public static function find()
-    {
-        return new PhotoQuery(get_called_class());
-    }
-    public function fields()
-    {
-        return ['id'];
-    }*/
+        /*public static function find()
+        {
+            return new PhotoQuery(get_called_class());
+        }
+        public function fields()
+        {
+            return ['id'];
+        }*/
+
 }
