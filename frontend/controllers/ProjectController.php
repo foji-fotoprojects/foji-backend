@@ -5,6 +5,9 @@ namespace frontend\controllers;
 use Yii;
 use common\models\tables\Project;
 use common\models\ProjectSearch;
+use common\models\User;
+use common\models\Photographer;
+use yii\helpers\ArrayHelper;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -70,8 +73,13 @@ class ProjectController extends Controller
             return $this->redirect(['view', 'id' => $model->id]);
         }
 
+        $user = ArrayHelper::map(User::find()->all(), 'id', 'email');
+        $photographer = ArrayHelper::map(Photographer::find()->all(), 'id', 'name');
+
         return $this->render('create', [
             'model' => $model,
+            'user' => $user,
+            'photographer' => $photographer,
         ]);
     }
 
