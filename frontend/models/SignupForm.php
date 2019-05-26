@@ -11,37 +11,47 @@ class SignupForm extends Model
 {
     public $email;
     public $password;
+
+
     /**
      * {@inheritdoc}
      */
     public function rules()
     {
         return [
-        ['email', 'trim'],
+            ['email', 'trim'],
             [['email','password'], 'required'],
             ['email', 'email'],
             ['email', 'string', 'max' => 50],
-            ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This email address has already been taken.'],
+            ['email', 'unique', 'targetClass' => User::className(), 'message' => 'This email address has already been taken.'],
             ['password', 'string', 'min' => 6]
         ];
     }
     /**
      * Signs user up.
      *
-     * @return bool whether the creating new account was successful and email was sent
+     * @return User|null the saved model or null if saving fails
      */
     public function signup()
     {
-        if (!$this->validate()) {
-            return null;
-        }
+        if ($this->validate()) {
+            $user = new User();
+            $user->email = $this->email;
+            $user->setPassword($this->password);
+            $user->status = User::STATUS_WAIT;
+            $user->generateAuthKey();
+            $user->generateEmailConfirmToken();
 
-        $user = new User();
-        $user->email = $this->email;
-        $user->setPassword($this->password);
-        $user->generateAuthKey();
-        $user->generateEmailVerificationToken();
-        return $user->save() && $this->sendEmail($user);
+            if ($user->save()){
+            Yii::$app->mailer->compose('emailConfirm', ['user'=>$user])
+                ->setFrom([Yii::$app->params['supportEmail'] => Yii::$app->name])
+                ->setTo($this->email)
+                ->setSubject('Email confirmation for ' . Yii::$app->name)
+                ->send();
+            return $user;
+            }
+        }
+        return null;
     }
     /**
      * Sends confirmation email to user

@@ -49,7 +49,7 @@ AppAsset::register($this);
         $menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post')
             . Html::submitButton(
-                'Logout (' . Yii::$app->user->identity->username . ')',
+                'Logout (' . Yii::$app->user->identity->email . ')',
                 ['class' => 'btn btn-link logout']
             )
             . Html::endForm()
@@ -57,7 +57,18 @@ AppAsset::register($this);
     }
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => $menuItems,
+        'items' => array_filter([
+            ['label' => 'Home', 'url' => ['/site/index']],
+            ['label' => 'Contact', 'url' => ['/site/contact']],
+            Yii::$app->user->isGuest ?
+                ['label' => 'Sign Up', 'url' => ['/site/signup']] :
+                false,
+            Yii::$app->user->isGuest ?
+                ['label' => 'Login', 'url' => ['/site/login']] :
+                ['label' => 'Logout (' . Yii::$app->user->identity->email . ')',
+                 'url' => ['/user/default/logout'],
+                 'linkOptions' => ['data-method' => 'post']],
+        ]),
     ]);
     NavBar::end();
     ?>

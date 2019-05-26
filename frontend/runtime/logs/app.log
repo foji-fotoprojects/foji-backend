@@ -425,3 +425,2883 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2019-05-16 11:50:15 [127.0.0.1][-][ualivem73t7l5u5isljbdak1ssprvomr][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/contact in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('contact', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/contact', Array)
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-05-16 11:50:15 [127.0.0.1][-][ualivem73t7l5u5isljbdak1ssprvomr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => 'ualivem73t7l5u5isljbdak1ssprvomr'
+    '_csrf-frontend' => 'cf3bc4f19d240b71918ac1a41e3c11c383e9373db29ed273ebcf857f631d05f4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"RoUTwYy9UEOO_Yveu9AZQTx_bRQxM-qf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/about'
+    'HTTP_COOKIE' => 'foji=ualivem73t7l5u5isljbdak1ssprvomr; _csrf-frontend=cf3bc4f19d240b71918ac1a41e3c11c383e9373db29ed273ebcf857f631d05f4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22RoUTwYy9UEOO_Yveu9AZQTx_bRQxM-qf%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '10733'
+    'REDIRECT_URL' => '/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1557996615.846
+    'REQUEST_TIME' => 1557996615
+    'argv' => []
+    'argc' => 0
+]
+2019-05-17 11:12:33 [127.0.0.1][-][ualivem73t7l5u5isljbdak1ssprvomr][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\LoginForm::email in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\helpers\BaseHtml.php(2227): yii\base\Component->__get('email')
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\helpers\BaseHtml.php(1353): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\LoginForm), 'email')
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\helpers\BaseHtml.php(1407): yii\helpers\BaseHtml::activeInput('text', Object(common\models\LoginForm), 'email', Array)
+#3 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\widgets\ActiveField.php(404): yii\helpers\BaseHtml::activeTextInput(Object(common\models\LoginForm), 'email', Array)
+#4 C:\OSPanel\domains\localhost\foji-backend\frontend\views\site\login.php(22): yii\widgets\ActiveField->textInput(Array)
+#5 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(348): require('C:\\OSPanel\\doma...')
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\OSPanel\\doma...', Array)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, Object(frontend\controllers\SiteController))
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('login', Array, Object(frontend\controllers\SiteController))
+#9 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(102): yii\base\Controller->render('login', Array)
+#10 [internal function]: frontend\controllers\SiteController->actionLogin()
+#11 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#14 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#15 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2019-05-17 11:12:33 [127.0.0.1][-][ualivem73t7l5u5isljbdak1ssprvomr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => 'ualivem73t7l5u5isljbdak1ssprvomr'
+    '_csrf-frontend' => 'cf3bc4f19d240b71918ac1a41e3c11c383e9373db29ed273ebcf857f631d05f4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"RoUTwYy9UEOO_Yveu9AZQTx_bRQxM-qf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'HTTP_COOKIE' => 'foji=ualivem73t7l5u5isljbdak1ssprvomr; _csrf-frontend=cf3bc4f19d240b71918ac1a41e3c11c383e9373db29ed273ebcf857f631d05f4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22RoUTwYy9UEOO_Yveu9AZQTx_bRQxM-qf%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '5926'
+    'REDIRECT_URL' => '/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558080753.291
+    'REQUEST_TIME' => 1558080753
+    'argv' => []
+    'argc' => 0
+]
+2019-05-17 11:13:09 [127.0.0.1][-][ualivem73t7l5u5isljbdak1ssprvomr][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\LoginForm::email in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\helpers\BaseHtml.php(2227): yii\base\Component->__get('email')
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\helpers\BaseHtml.php(1353): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\LoginForm), 'email')
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\helpers\BaseHtml.php(1407): yii\helpers\BaseHtml::activeInput('text', Object(common\models\LoginForm), 'email', Array)
+#3 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\widgets\ActiveField.php(404): yii\helpers\BaseHtml::activeTextInput(Object(common\models\LoginForm), 'email', Array)
+#4 C:\OSPanel\domains\localhost\foji-backend\frontend\views\site\login.php(22): yii\widgets\ActiveField->textInput(Array)
+#5 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(348): require('C:\\OSPanel\\doma...')
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\OSPanel\\doma...', Array)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, Object(frontend\controllers\SiteController))
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('login', Array, Object(frontend\controllers\SiteController))
+#9 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(102): yii\base\Controller->render('login', Array)
+#10 [internal function]: frontend\controllers\SiteController->actionLogin()
+#11 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#14 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#15 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2019-05-17 11:13:09 [127.0.0.1][-][ualivem73t7l5u5isljbdak1ssprvomr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => 'ualivem73t7l5u5isljbdak1ssprvomr'
+    '_csrf-frontend' => 'cf3bc4f19d240b71918ac1a41e3c11c383e9373db29ed273ebcf857f631d05f4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"RoUTwYy9UEOO_Yveu9AZQTx_bRQxM-qf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'HTTP_COOKIE' => 'foji=ualivem73t7l5u5isljbdak1ssprvomr; _csrf-frontend=cf3bc4f19d240b71918ac1a41e3c11c383e9373db29ed273ebcf857f631d05f4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22RoUTwYy9UEOO_Yveu9AZQTx_bRQxM-qf%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '5931'
+    'REDIRECT_URL' => '/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558080789.081
+    'REQUEST_TIME' => 1558080789
+    'argv' => []
+    'argc' => 0
+]
+2019-05-17 12:04:04 [127.0.0.1][-][ualivem73t7l5u5isljbdak1ssprvomr][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\LoginForm::email in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\helpers\BaseHtml.php(2227): yii\base\Component->__get('email')
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\helpers\BaseHtml.php(1353): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\LoginForm), 'email')
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\helpers\BaseHtml.php(1407): yii\helpers\BaseHtml::activeInput('text', Object(common\models\LoginForm), 'email', Array)
+#3 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\widgets\ActiveField.php(404): yii\helpers\BaseHtml::activeTextInput(Object(common\models\LoginForm), 'email', Array)
+#4 C:\OSPanel\domains\localhost\foji-backend\frontend\views\site\login.php(22): yii\widgets\ActiveField->textInput(Array)
+#5 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(348): require('C:\\OSPanel\\doma...')
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\OSPanel\\doma...', Array)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, Object(frontend\controllers\SiteController))
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('login', Array, Object(frontend\controllers\SiteController))
+#9 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(102): yii\base\Controller->render('login', Array)
+#10 [internal function]: frontend\controllers\SiteController->actionLogin()
+#11 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#14 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#15 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2019-05-17 12:04:04 [127.0.0.1][-][ualivem73t7l5u5isljbdak1ssprvomr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => 'ualivem73t7l5u5isljbdak1ssprvomr'
+    '_csrf-frontend' => 'cf3bc4f19d240b71918ac1a41e3c11c383e9373db29ed273ebcf857f631d05f4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"RoUTwYy9UEOO_Yveu9AZQTx_bRQxM-qf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'HTTP_COOKIE' => 'foji=ualivem73t7l5u5isljbdak1ssprvomr; _csrf-frontend=cf3bc4f19d240b71918ac1a41e3c11c383e9373db29ed273ebcf857f631d05f4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22RoUTwYy9UEOO_Yveu9AZQTx_bRQxM-qf%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '6715'
+    'REDIRECT_URL' => '/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558083844.595
+    'REQUEST_TIME' => 1558083844
+    'argv' => []
+    'argc' => 0
+]
+2019-05-17 12:04:06 [127.0.0.1][-][ualivem73t7l5u5isljbdak1ssprvomr][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\LoginForm::email in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\helpers\BaseHtml.php(2227): yii\base\Component->__get('email')
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\helpers\BaseHtml.php(1353): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\LoginForm), 'email')
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\helpers\BaseHtml.php(1407): yii\helpers\BaseHtml::activeInput('text', Object(common\models\LoginForm), 'email', Array)
+#3 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\widgets\ActiveField.php(404): yii\helpers\BaseHtml::activeTextInput(Object(common\models\LoginForm), 'email', Array)
+#4 C:\OSPanel\domains\localhost\foji-backend\frontend\views\site\login.php(22): yii\widgets\ActiveField->textInput(Array)
+#5 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(348): require('C:\\OSPanel\\doma...')
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\OSPanel\\doma...', Array)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, Object(frontend\controllers\SiteController))
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('login', Array, Object(frontend\controllers\SiteController))
+#9 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(102): yii\base\Controller->render('login', Array)
+#10 [internal function]: frontend\controllers\SiteController->actionLogin()
+#11 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#14 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#15 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2019-05-17 12:04:06 [127.0.0.1][-][ualivem73t7l5u5isljbdak1ssprvomr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => 'ualivem73t7l5u5isljbdak1ssprvomr'
+    '_csrf-frontend' => 'cf3bc4f19d240b71918ac1a41e3c11c383e9373db29ed273ebcf857f631d05f4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"RoUTwYy9UEOO_Yveu9AZQTx_bRQxM-qf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'HTTP_COOKIE' => 'foji=ualivem73t7l5u5isljbdak1ssprvomr; _csrf-frontend=cf3bc4f19d240b71918ac1a41e3c11c383e9373db29ed273ebcf857f631d05f4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22RoUTwYy9UEOO_Yveu9AZQTx_bRQxM-qf%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '6718'
+    'REDIRECT_URL' => '/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558083846.414
+    'REQUEST_TIME' => 1558083846
+    'argv' => []
+    'argc' => 0
+]
+2019-05-17 23:45:49 [127.0.0.1][-][ualivem73t7l5u5isljbdak1ssprvomr][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\LoginForm::email in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\helpers\BaseHtml.php(2227): yii\base\Component->__get('email')
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\helpers\BaseHtml.php(1353): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\LoginForm), 'email')
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\helpers\BaseHtml.php(1407): yii\helpers\BaseHtml::activeInput('text', Object(common\models\LoginForm), 'email', Array)
+#3 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\widgets\ActiveField.php(404): yii\helpers\BaseHtml::activeTextInput(Object(common\models\LoginForm), 'email', Array)
+#4 C:\OSPanel\domains\localhost\foji-backend\frontend\views\site\login.php(22): yii\widgets\ActiveField->textInput(Array)
+#5 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(348): require('C:\\OSPanel\\doma...')
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\OSPanel\\doma...', Array)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, Object(frontend\controllers\SiteController))
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('login', Array, Object(frontend\controllers\SiteController))
+#9 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(102): yii\base\Controller->render('login', Array)
+#10 [internal function]: frontend\controllers\SiteController->actionLogin()
+#11 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#14 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#15 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2019-05-17 23:45:49 [127.0.0.1][-][ualivem73t7l5u5isljbdak1ssprvomr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => 'ualivem73t7l5u5isljbdak1ssprvomr'
+    '_csrf-frontend' => 'cf3bc4f19d240b71918ac1a41e3c11c383e9373db29ed273ebcf857f631d05f4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"RoUTwYy9UEOO_Yveu9AZQTx_bRQxM-qf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'HTTP_COOKIE' => 'foji=ualivem73t7l5u5isljbdak1ssprvomr; _csrf-frontend=cf3bc4f19d240b71918ac1a41e3c11c383e9373db29ed273ebcf857f631d05f4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22RoUTwYy9UEOO_Yveu9AZQTx_bRQxM-qf%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '7699'
+    'REDIRECT_URL' => '/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558125949.349
+    'REQUEST_TIME' => 1558125949
+    'argv' => []
+    'argc' => 0
+]
+2019-05-21 09:27:21 [127.0.0.1][-][vd4h5ufncogrijjg7t2295q2kp3sbm0n][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\LoginForm::email in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\helpers\BaseHtml.php(2227): yii\base\Component->__get('email')
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\helpers\BaseHtml.php(1353): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\LoginForm), 'email')
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\helpers\BaseHtml.php(1407): yii\helpers\BaseHtml::activeInput('text', Object(common\models\LoginForm), 'email', Array)
+#3 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\widgets\ActiveField.php(404): yii\helpers\BaseHtml::activeTextInput(Object(common\models\LoginForm), 'email', Array)
+#4 C:\OSPanel\domains\localhost\foji-backend\frontend\views\site\login.php(22): yii\widgets\ActiveField->textInput(Array)
+#5 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(348): require('C:\\OSPanel\\doma...')
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\OSPanel\\doma...', Array)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, Object(frontend\controllers\SiteController))
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('login', Array, Object(frontend\controllers\SiteController))
+#9 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(102): yii\base\Controller->render('login', Array)
+#10 [internal function]: frontend\controllers\SiteController->actionLogin()
+#11 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#14 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#15 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2019-05-21 09:27:21 [127.0.0.1][-][vd4h5ufncogrijjg7t2295q2kp3sbm0n][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => 'vd4h5ufncogrijjg7t2295q2kp3sbm0n'
+    '_csrf-frontend' => '8cf5ec59b3ccfe7476ba1c2a1f3345ce32331378f2bc40401a6d3e1371431a33a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"x_rRk8dfFFLGR--jqh3RZqUIGkT6FJhL\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'HTTP_COOKIE' => 'foji=vd4h5ufncogrijjg7t2295q2kp3sbm0n; _csrf-frontend=8cf5ec59b3ccfe7476ba1c2a1f3345ce32331378f2bc40401a6d3e1371431a33a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22x_rRk8dfFFLGR--jqh3RZqUIGkT6FJhL%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '6362'
+    'REDIRECT_URL' => '/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558420041.583
+    'REQUEST_TIME' => 1558420041
+    'argv' => []
+    'argc' => 0
+]
+2019-05-21 09:29:28 [127.0.0.1][-][vd4h5ufncogrijjg7t2295q2kp3sbm0n][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\LoginForm::username in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\validators\Validator.php(302): yii\base\Component->__get('username')
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\Validator->validateAttribute(Object(common\models\LoginForm), 'username')
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#3 C:\OSPanel\domains\localhost\foji-backend\common\models\LoginForm.php(56): yii\base\Model->validate()
+#4 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(96): common\models\LoginForm->login()
+#5 [internal function]: frontend\controllers\SiteController->actionLogin()
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#9 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#10 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2019-05-21 09:29:28 [127.0.0.1][-][vd4h5ufncogrijjg7t2295q2kp3sbm0n][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'OCUmgJ0HSnl-VMWdqWB-XxPwblZ1WayKbNjxWt-efktAelTS9j8uHzgSidr7TVM1YphdBC8o-cMrs6VsmdQWBw=='
+    'LoginForm' => [
+        'email' => 'a.mel@list.ru'
+        'password' => '1234567'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => 'vd4h5ufncogrijjg7t2295q2kp3sbm0n'
+    '_csrf-frontend' => '8cf5ec59b3ccfe7476ba1c2a1f3345ce32331378f2bc40401a6d3e1371431a33a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"x_rRk8dfFFLGR--jqh3RZqUIGkT6FJhL\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '246'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/login'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_COOKIE' => 'foji=vd4h5ufncogrijjg7t2295q2kp3sbm0n; _csrf-frontend=8cf5ec59b3ccfe7476ba1c2a1f3345ce32331378f2bc40401a6d3e1371431a33a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22x_rRk8dfFFLGR--jqh3RZqUIGkT6FJhL%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '6379'
+    'REDIRECT_URL' => '/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558420168.664
+    'REQUEST_TIME' => 1558420168
+    'argv' => []
+    'argc' => 0
+]
+2019-05-21 09:29:57 [127.0.0.1][-][vd4h5ufncogrijjg7t2295q2kp3sbm0n][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\LoginForm::username in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\validators\Validator.php(302): yii\base\Component->__get('username')
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\Validator->validateAttribute(Object(common\models\LoginForm), 'username')
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#3 C:\OSPanel\domains\localhost\foji-backend\common\models\LoginForm.php(56): yii\base\Model->validate()
+#4 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(96): common\models\LoginForm->login()
+#5 [internal function]: frontend\controllers\SiteController->actionLogin()
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#9 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#10 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2019-05-21 09:29:57 [127.0.0.1][-][vd4h5ufncogrijjg7t2295q2kp3sbm0n][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'OCUmgJ0HSnl-VMWdqWB-XxPwblZ1WayKbNjxWt-efktAelTS9j8uHzgSidr7TVM1YphdBC8o-cMrs6VsmdQWBw=='
+    'LoginForm' => [
+        'email' => 'a.mel@list.ru'
+        'password' => '1234567'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => 'vd4h5ufncogrijjg7t2295q2kp3sbm0n'
+    '_csrf-frontend' => '8cf5ec59b3ccfe7476ba1c2a1f3345ce32331378f2bc40401a6d3e1371431a33a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"x_rRk8dfFFLGR--jqh3RZqUIGkT6FJhL\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '246'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/login'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_COOKIE' => 'foji=vd4h5ufncogrijjg7t2295q2kp3sbm0n; _csrf-frontend=8cf5ec59b3ccfe7476ba1c2a1f3345ce32331378f2bc40401a6d3e1371431a33a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22x_rRk8dfFFLGR--jqh3RZqUIGkT6FJhL%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '6384'
+    'REDIRECT_URL' => '/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558420197.886
+    'REQUEST_TIME' => 1558420197
+    'argv' => []
+    'argc' => 0
+]
+2019-05-21 09:30:12 [127.0.0.1][-][vd4h5ufncogrijjg7t2295q2kp3sbm0n][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\LoginForm::username in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\validators\Validator.php(302): yii\base\Component->__get('username')
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\Validator->validateAttribute(Object(common\models\LoginForm), 'username')
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#3 C:\OSPanel\domains\localhost\foji-backend\common\models\LoginForm.php(56): yii\base\Model->validate()
+#4 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(96): common\models\LoginForm->login()
+#5 [internal function]: frontend\controllers\SiteController->actionLogin()
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#9 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#10 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2019-05-21 09:30:12 [127.0.0.1][-][vd4h5ufncogrijjg7t2295q2kp3sbm0n][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'EYye3qllnjtFTMpLXtAf3PgFpaW_cKsv9-2sBA11f_dp0-yMwl36XQMKhgwM_TK2iW2W9-UB_mawhvgySz8Xuw=='
+    'LoginForm' => [
+        'email' => 'a.mel@list.ru'
+        'password' => '1234567'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => 'vd4h5ufncogrijjg7t2295q2kp3sbm0n'
+    '_csrf-frontend' => '8cf5ec59b3ccfe7476ba1c2a1f3345ce32331378f2bc40401a6d3e1371431a33a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"x_rRk8dfFFLGR--jqh3RZqUIGkT6FJhL\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '246'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/login'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_COOKIE' => 'foji=vd4h5ufncogrijjg7t2295q2kp3sbm0n; _csrf-frontend=8cf5ec59b3ccfe7476ba1c2a1f3345ce32331378f2bc40401a6d3e1371431a33a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22x_rRk8dfFFLGR--jqh3RZqUIGkT6FJhL%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '6388'
+    'REDIRECT_URL' => '/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558420212.171
+    'REQUEST_TIME' => 1558420212
+    'argv' => []
+    'argc' => 0
+]
+2019-05-21 09:31:45 [127.0.0.1][-][vd4h5ufncogrijjg7t2295q2kp3sbm0n][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\LoginForm::username in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\validators\Validator.php(302): yii\base\Component->__get('username')
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\Validator->validateAttribute(Object(common\models\LoginForm), 'username')
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#3 C:\OSPanel\domains\localhost\foji-backend\common\models\LoginForm.php(56): yii\base\Model->validate()
+#4 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(96): common\models\LoginForm->login()
+#5 [internal function]: frontend\controllers\SiteController->actionLogin()
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#9 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#10 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2019-05-21 09:31:45 [127.0.0.1][-][vd4h5ufncogrijjg7t2295q2kp3sbm0n][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'H4sEBgIW3RSaXM-UVm1M0UtD-8L38RfH7tvvnS6aMIFn1HZUaS65ctwag9MEQGG7OivIkK2AQo6psLuraNBYzQ=='
+    'LoginForm' => [
+        'email' => 'a.mel@list.ru'
+        'password' => '1234567'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => 'vd4h5ufncogrijjg7t2295q2kp3sbm0n'
+    '_csrf-frontend' => '8cf5ec59b3ccfe7476ba1c2a1f3345ce32331378f2bc40401a6d3e1371431a33a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"x_rRk8dfFFLGR--jqh3RZqUIGkT6FJhL\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '246'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/login'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_COOKIE' => 'foji=vd4h5ufncogrijjg7t2295q2kp3sbm0n; _csrf-frontend=8cf5ec59b3ccfe7476ba1c2a1f3345ce32331378f2bc40401a6d3e1371431a33a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22x_rRk8dfFFLGR--jqh3RZqUIGkT6FJhL%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '6396'
+    'REDIRECT_URL' => '/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558420305.348
+    'REQUEST_TIME' => 1558420305
+    'argv' => []
+    'argc' => 0
+]
+2019-05-21 09:32:48 [127.0.0.1][-][vd4h5ufncogrijjg7t2295q2kp3sbm0n][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: common\models\User::verification_token in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(324): yii\base\Component->__set('verification_to...', 'Aq8mkB4kAgc7Bu5...')
+#1 C:\OSPanel\domains\localhost\foji-backend\common\models\User.php(209): yii\db\BaseActiveRecord->__set('verification_to...', 'Aq8mkB4kAgc7Bu5...')
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\models\SignupForm.php(44): common\models\User->generateEmailVerificationToken()
+#3 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(140): frontend\models\SignupForm->signup()
+#4 [internal function]: frontend\controllers\SiteController->actionSignup()
+#5 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#9 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2019-05-21 09:32:48 [127.0.0.1][-][vd4h5ufncogrijjg7t2295q2kp3sbm0n][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'f1WptqvGtCt7T9biRRr1sOKQp3LMcj1_xVBKjz6LsMMHCtvkwP7QTT0JmqUXN9jak_iUIJYDaDaCOx65eMHYjw=='
+    'SignupForm' => [
+        'email' => 'a.mel@list.ru'
+        'password' => '1234567'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => 'vd4h5ufncogrijjg7t2295q2kp3sbm0n'
+    '_csrf-frontend' => '8cf5ec59b3ccfe7476ba1c2a1f3345ce32331378f2bc40401a6d3e1371431a33a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"x_rRk8dfFFLGR--jqh3RZqUIGkT6FJhL\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '193'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_COOKIE' => 'foji=vd4h5ufncogrijjg7t2295q2kp3sbm0n; _csrf-frontend=8cf5ec59b3ccfe7476ba1c2a1f3345ce32331378f2bc40401a6d3e1371431a33a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22x_rRk8dfFFLGR--jqh3RZqUIGkT6FJhL%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '6413'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558420368.031
+    'REQUEST_TIME' => 1558420368
+    'argv' => []
+    'argc' => 0
+]
+2019-05-22 10:31:08 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][error][yii\base\InvalidCallException] yii\base\InvalidCallException: Getting write-only property: common\models\User::password in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php:151
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('password')
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\validators\Validator.php(302): yii\db\BaseActiveRecord->__get('password')
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\Validator->validateAttribute(Object(common\models\User), 'password')
+#3 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\User), Array)
+#4 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\ActiveRecord.php(515): yii\base\Model->validate(Array)
+#5 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\OSPanel\domains\localhost\foji-backend\common\services\auth\SignupService.php(22): yii\db\BaseActiveRecord->save()
+#7 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(160): common\services\auth\SignupService->signup(Object(frontend\models\SignupForm))
+#8 [internal function]: frontend\controllers\SiteController->actionSignup()
+#9 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#12 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#13 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+2019-05-22 10:31:08 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'O_WX6nNT62_8ihQZu36LHuCbnnOmWM3GnduPt0hio9lvuMGvNwTcN4nuLXDCU8JcrPzNPp8ft7XzvsCHf1Tvmg=='
+    'SignupForm' => [
+        'email' => 'a.mel@list.ru'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj'
+    '_csrf-frontend' => 'adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TMVEDW7Xud9iy-IBLgSM9GzsneO076LC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '192'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_COOKIE' => 'foji=2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj; _csrf-frontend=adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TMVEDW7Xud9iy-IBLgSM9GzsneO076LC%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '36330'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558510267.991
+    'REQUEST_TIME' => 1558510267
+    'argv' => []
+    'argc' => 0
+]
+2019-05-25 21:36:13 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: common\models\User::created_at in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(324): yii\base\Component->__set('created_at', 1558809373)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\behaviors\AttributeBehavior.php(128): yii\db\BaseActiveRecord->__set('created_at', 1558809373)
+#2 [internal function]: yii\behaviors\AttributeBehavior->evaluateAttributes(Object(yii\base\ModelEvent))
+#3 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ModelEvent))
+#4 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(974): yii\base\Component->trigger('beforeInsert', Object(yii\base\ModelEvent))
+#5 C:\OSPanel\domains\localhost\foji-backend\common\models\User.php(196): yii\db\BaseActiveRecord->beforeSave(true)
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\ActiveRecord.php(551): common\models\User->beforeSave(true)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\ActiveRecord.php(521): yii\db\ActiveRecord->insertInternal(NULL)
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#9 C:\OSPanel\domains\localhost\foji-backend\frontend\models\SignupForm.php(44): yii\db\BaseActiveRecord->save()
+#10 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(145): frontend\models\SignupForm->signup()
+#11 [internal function]: frontend\controllers\SiteController->actionSignup()
+#12 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#14 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#15 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#16 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+2019-05-25 21:36:12 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'wH3abZxQ85xstT-NYEl1AthqiH5Wbwjxc0YTv8fa6DaUMIwo2AfExBnRBuQZZDxAlA3bM28ocoIdI1yP8OykdQ=='
+    'SignupForm' => [
+        'email' => 'a.mel@list.ru'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj'
+    '_csrf-frontend' => 'adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TMVEDW7Xud9iy-IBLgSM9GzsneO076LC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '192'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_COOKIE' => 'foji=2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj; _csrf-frontend=adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TMVEDW7Xud9iy-IBLgSM9GzsneO076LC%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '34023'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558809372.091
+    'REQUEST_TIME' => 1558809372
+    'argv' => []
+    'argc' => 0
+]
+2019-05-25 22:17:21 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: common\models\User::created_at in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(324): yii\base\Component->__set('created_at', 1558811841)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\behaviors\AttributeBehavior.php(128): yii\db\BaseActiveRecord->__set('created_at', 1558811841)
+#2 [internal function]: yii\behaviors\AttributeBehavior->evaluateAttributes(Object(yii\base\ModelEvent))
+#3 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ModelEvent))
+#4 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(974): yii\base\Component->trigger('beforeInsert', Object(yii\base\ModelEvent))
+#5 C:\OSPanel\domains\localhost\foji-backend\common\models\User.php(196): yii\db\BaseActiveRecord->beforeSave(true)
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\ActiveRecord.php(551): common\models\User->beforeSave(true)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\ActiveRecord.php(521): yii\db\ActiveRecord->insertInternal(NULL)
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#9 C:\OSPanel\domains\localhost\foji-backend\frontend\models\SignupForm.php(44): yii\db\BaseActiveRecord->save()
+#10 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(145): frontend\models\SignupForm->signup()
+#11 [internal function]: frontend\controllers\SiteController->actionSignup()
+#12 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#14 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#15 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#16 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+2019-05-25 22:17:20 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'FzRlPEdwopTVZrrEnuxwpI6qg4Qr6ake0uCYoE_E7rlDeTN5AyeVzKACg63nwTnmws3QyRKu0228hdeQePKi-g=='
+    'SignupForm' => [
+        'email' => 'a.mel@list.ru'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj'
+    '_csrf-frontend' => 'adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TMVEDW7Xud9iy-IBLgSM9GzsneO076LC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '192'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_COOKIE' => 'foji=2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj; _csrf-frontend=adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TMVEDW7Xud9iy-IBLgSM9GzsneO076LC%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '34250'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558811840.375
+    'REQUEST_TIME' => 1558811840
+    'argv' => []
+    'argc' => 0
+]
+2019-05-25 22:24:57 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: common\models\User::created_at in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(324): yii\base\Component->__set('created_at', 1558812297)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\behaviors\AttributeBehavior.php(128): yii\db\BaseActiveRecord->__set('created_at', 1558812297)
+#2 [internal function]: yii\behaviors\AttributeBehavior->evaluateAttributes(Object(yii\base\ModelEvent))
+#3 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ModelEvent))
+#4 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(974): yii\base\Component->trigger('beforeInsert', Object(yii\base\ModelEvent))
+#5 C:\OSPanel\domains\localhost\foji-backend\common\models\User.php(196): yii\db\BaseActiveRecord->beforeSave(true)
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\ActiveRecord.php(551): common\models\User->beforeSave(true)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\ActiveRecord.php(521): yii\db\ActiveRecord->insertInternal(NULL)
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#9 C:\OSPanel\domains\localhost\foji-backend\frontend\models\SignupForm.php(44): yii\db\BaseActiveRecord->save()
+#10 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(145): frontend\models\SignupForm->signup()
+#11 [internal function]: frontend\controllers\SiteController->actionSignup()
+#12 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#14 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#15 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#16 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+2019-05-25 22:24:56 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'XpZHwYW7jSXpp9Ob7mIds07DDv1N99LOYgBidXmOk18K2xGEwey6fZzD6vKXT1TxAqRdsHSwqL0MZS1FTrjfHA=='
+    'SignupForm' => [
+        'email' => 'a.mail@list.ru'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj'
+    '_csrf-frontend' => 'adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TMVEDW7Xud9iy-IBLgSM9GzsneO076LC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '193'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_COOKIE' => 'foji=2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj; _csrf-frontend=adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TMVEDW7Xud9iy-IBLgSM9GzsneO076LC%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '34318'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558812296.98
+    'REQUEST_TIME' => 1558812296
+    'argv' => []
+    'argc' => 0
+]
+2019-05-26 01:12:27 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: common\models\User::date_created in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(324): yii\base\Component->__set('date_created', Object(yii\db\Expression))
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\behaviors\AttributeBehavior.php(128): yii\db\BaseActiveRecord->__set('date_created', Object(yii\db\Expression))
+#2 [internal function]: yii\behaviors\AttributeBehavior->evaluateAttributes(Object(yii\base\ModelEvent))
+#3 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ModelEvent))
+#4 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(974): yii\base\Component->trigger('beforeInsert', Object(yii\base\ModelEvent))
+#5 C:\OSPanel\domains\localhost\foji-backend\common\models\User.php(215): yii\db\BaseActiveRecord->beforeSave(true)
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\ActiveRecord.php(551): common\models\User->beforeSave(true)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\ActiveRecord.php(521): yii\db\ActiveRecord->insertInternal(NULL)
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#9 C:\OSPanel\domains\localhost\foji-backend\frontend\models\SignupForm.php(44): yii\db\BaseActiveRecord->save()
+#10 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(145): frontend\models\SignupForm->signup()
+#11 [internal function]: frontend\controllers\SiteController->actionSignup()
+#12 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#14 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#15 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#16 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+2019-05-26 01:12:26 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'iDeGB1R7IDbKAYhWnmIkTxlZir2OA6y3rA-VPzDFNUPcetBCECwXbr9lsT_nT20NVT7Z8LdE1sTCatoPB_N5AA=='
+    'SignupForm' => [
+        'email' => 'a.mel@list.ru'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj'
+    '_csrf-frontend' => 'adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TMVEDW7Xud9iy-IBLgSM9GzsneO076LC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '192'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_COOKIE' => 'foji=2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj; _csrf-frontend=adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TMVEDW7Xud9iy-IBLgSM9GzsneO076LC%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '35715'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558822346.939
+    'REQUEST_TIME' => 1558822346
+    'argv' => []
+    'argc' => 0
+]
+2019-05-26 11:49:09 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: common\models\User::date_created in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(324): yii\base\Component->__set('date_created', Object(yii\db\Expression))
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\behaviors\AttributeBehavior.php(128): yii\db\BaseActiveRecord->__set('date_created', Object(yii\db\Expression))
+#2 [internal function]: yii\behaviors\AttributeBehavior->evaluateAttributes(Object(yii\base\ModelEvent))
+#3 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ModelEvent))
+#4 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(974): yii\base\Component->trigger('beforeInsert', Object(yii\base\ModelEvent))
+#5 C:\OSPanel\domains\localhost\foji-backend\common\models\User.php(215): yii\db\BaseActiveRecord->beforeSave(true)
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\ActiveRecord.php(551): common\models\User->beforeSave(true)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\ActiveRecord.php(521): yii\db\ActiveRecord->insertInternal(NULL)
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#9 C:\OSPanel\domains\localhost\foji-backend\frontend\models\SignupForm.php(45): yii\db\BaseActiveRecord->save()
+#10 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(145): frontend\models\SignupForm->signup()
+#11 [internal function]: frontend\controllers\SiteController->actionSignup()
+#12 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#14 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#15 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#16 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+2019-05-26 11:49:09 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'G90OG-YJzonC905Ip9DfxyFIwtteOc-fjQmJkxzMjN5PkFheol750beTdyHe_ZaFbS-Rlmd-tezjbMajK_rAnQ=='
+    'SignupForm' => [
+        'email' => 'a.mel@list.ru'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj'
+    '_csrf-frontend' => 'adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TMVEDW7Xud9iy-IBLgSM9GzsneO076LC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '192'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_COOKIE' => 'foji=2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj; _csrf-frontend=adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TMVEDW7Xud9iy-IBLgSM9GzsneO076LC%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '36323'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558860549.111
+    'REQUEST_TIME' => 1558860549
+    'argv' => []
+    'argc' => 0
+]
+2019-05-26 11:55:46 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/contact in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('contact', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/contact', Array)
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-05-26 11:55:46 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj'
+    '_csrf-frontend' => 'adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TMVEDW7Xud9iy-IBLgSM9GzsneO076LC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_COOKIE' => 'foji=2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj; _csrf-frontend=adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TMVEDW7Xud9iy-IBLgSM9GzsneO076LC%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '36444'
+    'REDIRECT_URL' => '/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558860946.373
+    'REQUEST_TIME' => 1558860946
+    'argv' => []
+    'argc' => 0
+]
+2019-05-26 11:57:35 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: common\models\User::date_created in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(324): yii\base\Component->__set('date_created', Object(yii\db\Expression))
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\behaviors\AttributeBehavior.php(128): yii\db\BaseActiveRecord->__set('date_created', Object(yii\db\Expression))
+#2 [internal function]: yii\behaviors\AttributeBehavior->evaluateAttributes(Object(yii\base\ModelEvent))
+#3 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ModelEvent))
+#4 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(974): yii\base\Component->trigger('beforeInsert', Object(yii\base\ModelEvent))
+#5 C:\OSPanel\domains\localhost\foji-backend\common\models\User.php(215): yii\db\BaseActiveRecord->beforeSave(true)
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\ActiveRecord.php(551): common\models\User->beforeSave(true)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\ActiveRecord.php(521): yii\db\ActiveRecord->insertInternal(NULL)
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#9 C:\OSPanel\domains\localhost\foji-backend\frontend\models\SignupForm.php(45): yii\db\BaseActiveRecord->save()
+#10 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(145): frontend\models\SignupForm->signup()
+#11 [internal function]: frontend\controllers\SiteController->actionSignup()
+#12 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#14 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#15 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#16 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+2019-05-26 11:57:35 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'hm5TdtA6IDMGWqaZX9y1yZQxudIzYmmHjprCwZFKJp7SIwUzlG0Xa3M-n_Am8fyL2FbqnwolE_Tg_43xpnxq3Q=='
+    'SignupForm' => [
+        'email' => 'al.wokr@gmail.ru'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj'
+    '_csrf-frontend' => 'adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TMVEDW7Xud9iy-IBLgSM9GzsneO076LC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '195'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_COOKIE' => 'foji=2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj; _csrf-frontend=adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TMVEDW7Xud9iy-IBLgSM9GzsneO076LC%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '36494'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558861055.244
+    'REQUEST_TIME' => 1558861055
+    'argv' => []
+    'argc' => 0
+]
+2019-05-26 12:43:15 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: common\models\User::date_created in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(324): yii\base\Component->__set('date_created', Object(yii\db\Expression))
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\behaviors\AttributeBehavior.php(128): yii\db\BaseActiveRecord->__set('date_created', Object(yii\db\Expression))
+#2 [internal function]: yii\behaviors\AttributeBehavior->evaluateAttributes(Object(yii\base\ModelEvent))
+#3 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ModelEvent))
+#4 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(974): yii\base\Component->trigger('beforeInsert', Object(yii\base\ModelEvent))
+#5 C:\OSPanel\domains\localhost\foji-backend\common\models\User.php(215): yii\db\BaseActiveRecord->beforeSave(true)
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\ActiveRecord.php(551): common\models\User->beforeSave(true)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\ActiveRecord.php(521): yii\db\ActiveRecord->insertInternal(NULL)
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#9 C:\OSPanel\domains\localhost\foji-backend\frontend\models\SignupForm.php(45): yii\db\BaseActiveRecord->save()
+#10 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(145): frontend\models\SignupForm->signup()
+#11 [internal function]: frontend\controllers\SiteController->actionSignup()
+#12 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#14 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#15 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#16 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+2019-05-26 12:43:15 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'HVxL1iHelS5sv6t_-_2jmlj53H7DasrIYgV6arMDYfNJER2TZYmidhnbkhaC0OrYFJ6PM_otsLsMYDVahDUtsA=='
+    'SignupForm' => [
+        'email' => 'a.mel@list.ru'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj'
+    '_csrf-frontend' => 'adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TMVEDW7Xud9iy-IBLgSM9GzsneO076LC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '192'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_COOKIE' => 'foji=2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj; _csrf-frontend=adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TMVEDW7Xud9iy-IBLgSM9GzsneO076LC%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '36784'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558863795.071
+    'REQUEST_TIME' => 1558863795
+    'argv' => []
+    'argc' => 0
+]
+2019-05-26 12:45:22 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: common\models\User::created_at in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(324): yii\base\Component->__set('created_at', 1558863922)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\behaviors\AttributeBehavior.php(128): yii\db\BaseActiveRecord->__set('created_at', 1558863922)
+#2 [internal function]: yii\behaviors\AttributeBehavior->evaluateAttributes(Object(yii\base\ModelEvent))
+#3 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ModelEvent))
+#4 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(974): yii\base\Component->trigger('beforeInsert', Object(yii\base\ModelEvent))
+#5 C:\OSPanel\domains\localhost\foji-backend\common\models\User.php(210): yii\db\BaseActiveRecord->beforeSave(true)
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\ActiveRecord.php(551): common\models\User->beforeSave(true)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\ActiveRecord.php(521): yii\db\ActiveRecord->insertInternal(NULL)
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#9 C:\OSPanel\domains\localhost\foji-backend\frontend\models\SignupForm.php(45): yii\db\BaseActiveRecord->save()
+#10 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(145): frontend\models\SignupForm->signup()
+#11 [internal function]: frontend\controllers\SiteController->actionSignup()
+#12 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#14 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#15 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#16 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+2019-05-26 12:45:21 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'HVxL1iHelS5sv6t_-_2jmlj53H7DasrIYgV6arMDYfNJER2TZYmidhnbkhaC0OrYFJ6PM_otsLsMYDVahDUtsA=='
+    'SignupForm' => [
+        'email' => 'a.mel@list.ru'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj'
+    '_csrf-frontend' => 'adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TMVEDW7Xud9iy-IBLgSM9GzsneO076LC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '207'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_COOKIE' => 'foji=2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj; _csrf-frontend=adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TMVEDW7Xud9iy-IBLgSM9GzsneO076LC%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '36820'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558863921.364
+    'REQUEST_TIME' => 1558863921
+    'argv' => []
+    'argc' => 0
+]
+2019-05-26 13:06:34 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\OSPanel\domains\localhost\foji-backend\common/mail\common/mail/signup-confirm.php in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, Object(yii\swiftmailer\Mailer))
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\mail\BaseMailer.php(302): yii\base\View->render('common/mail/sig...', Array, Object(yii\swiftmailer\Mailer))
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\mail\BaseMailer.php(194): yii\mail\BaseMailer->render('common/mail/sig...', Array, 'layouts/html')
+#3 C:\OSPanel\domains\localhost\foji-backend\frontend\models\SignupForm.php(46): yii\mail\BaseMailer->compose('common/mail/sig...', Array)
+#4 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(145): frontend\models\SignupForm->signup()
+#5 [internal function]: frontend\controllers\SiteController->actionSignup()
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#9 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#10 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2019-05-26 13:06:34 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'HVxL1iHelS5sv6t_-_2jmlj53H7DasrIYgV6arMDYfNJER2TZYmidhnbkhaC0OrYFJ6PM_otsLsMYDVahDUtsA=='
+    'SignupForm' => [
+        'email' => 'a.mel@list.ru'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj'
+    '_csrf-frontend' => 'adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TMVEDW7Xud9iy-IBLgSM9GzsneO076LC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '207'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_COOKIE' => 'foji=2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj; _csrf-frontend=adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TMVEDW7Xud9iy-IBLgSM9GzsneO076LC%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '37167'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558865194.019
+    'REQUEST_TIME' => 1558865194
+    'argv' => []
+    'argc' => 0
+]
+2019-05-26 13:24:47 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\OSPanel\domains\localhost\foji-backend\common/mail\common/mail/email-confirm.php in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, Object(yii\swiftmailer\Mailer))
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\mail\BaseMailer.php(302): yii\base\View->render('common/mail/ema...', Array, Object(yii\swiftmailer\Mailer))
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\mail\BaseMailer.php(194): yii\mail\BaseMailer->render('common/mail/ema...', Array, 'layouts/html')
+#3 C:\OSPanel\domains\localhost\foji-backend\frontend\models\SignupForm.php(46): yii\mail\BaseMailer->compose('common/mail/ema...', Array)
+#4 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(145): frontend\models\SignupForm->signup()
+#5 [internal function]: frontend\controllers\SiteController->actionSignup()
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#9 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#10 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2019-05-26 13:24:46 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'YwHWpFLJ9lL6a9UKYSOXy9fb1XuA3Qc2E1tgs611NL03TIDhFp7BCo8P7GMYDt6Jm7yGNrmafUV9Pi-DmkN4_g=='
+    'SignupForm' => [
+        'email' => 'a.mel@list.ru'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj'
+    '_csrf-frontend' => 'adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TMVEDW7Xud9iy-IBLgSM9GzsneO076LC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '192'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_COOKIE' => 'foji=2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj; _csrf-frontend=adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TMVEDW7Xud9iy-IBLgSM9GzsneO076LC%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '38063'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558866286.405
+    'REQUEST_TIME' => 1558866286
+    'argv' => []
+    'argc' => 0
+]
+2019-05-26 13:25:55 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\OSPanel\domains\localhost\foji-backend\common/mail\common/mail/emailConfirm.php in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, Object(yii\swiftmailer\Mailer))
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\mail\BaseMailer.php(302): yii\base\View->render('common/mail/ema...', Array, Object(yii\swiftmailer\Mailer))
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\mail\BaseMailer.php(194): yii\mail\BaseMailer->render('common/mail/ema...', Array, 'layouts/html')
+#3 C:\OSPanel\domains\localhost\foji-backend\frontend\models\SignupForm.php(46): yii\mail\BaseMailer->compose('common/mail/ema...', Array)
+#4 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(145): frontend\models\SignupForm->signup()
+#5 [internal function]: frontend\controllers\SiteController->actionSignup()
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#9 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#10 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2019-05-26 13:25:55 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'YwHWpFLJ9lL6a9UKYSOXy9fb1XuA3Qc2E1tgs611NL03TIDhFp7BCo8P7GMYDt6Jm7yGNrmafUV9Pi-DmkN4_g=='
+    'SignupForm' => [
+        'email' => 'a.mel@list.ru'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj'
+    '_csrf-frontend' => 'adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TMVEDW7Xud9iy-IBLgSM9GzsneO076LC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '192'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_COOKIE' => 'foji=2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj; _csrf-frontend=adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TMVEDW7Xud9iy-IBLgSM9GzsneO076LC%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '38090'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558866355.063
+    'REQUEST_TIME' => 1558866355
+    'argv' => []
+    'argc' => 0
+]
+2019-05-26 13:26:22 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\OSPanel\domains\localhost\foji-backend\common/mail\common/mail/emailConfirm.php in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, Object(yii\swiftmailer\Mailer))
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\mail\BaseMailer.php(302): yii\base\View->render('common/mail/ema...', Array, Object(yii\swiftmailer\Mailer))
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\mail\BaseMailer.php(194): yii\mail\BaseMailer->render('common/mail/ema...', Array, 'layouts/html')
+#3 C:\OSPanel\domains\localhost\foji-backend\frontend\models\SignupForm.php(46): yii\mail\BaseMailer->compose('common/mail/ema...', Array)
+#4 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(145): frontend\models\SignupForm->signup()
+#5 [internal function]: frontend\controllers\SiteController->actionSignup()
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#9 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#10 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2019-05-26 13:26:22 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => '5-l4byvwG4vrhRTURQ95S295ZkMNirot3Vc3Q7lA_iyzpC4qb6cs057hLb08IjAJIx41DjTNwF6zMnhzjnaybw=='
+    'SignupForm' => [
+        'email' => 'a.mel@list.ru'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj'
+    '_csrf-frontend' => 'adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TMVEDW7Xud9iy-IBLgSM9GzsneO076LC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '192'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_COOKIE' => 'foji=2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj; _csrf-frontend=adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TMVEDW7Xud9iy-IBLgSM9GzsneO076LC%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '38101'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558866381.995
+    'REQUEST_TIME' => 1558866381
+    'argv' => []
+    'argc' => 0
+]
+2019-05-26 15:30:46 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][error][ArgumentCountError] ArgumentCountError: Too few arguments to function frontend\models\SignupForm::__construct(), 0 passed in C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php on line 141 and at least 1 expected in C:\OSPanel\domains\localhost\foji-backend\frontend\models\SignupForm.php:21
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(141): frontend\models\SignupForm->__construct()
+#1 [internal function]: frontend\controllers\SiteController->actionSignup()
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#5 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2019-05-26 15:30:46 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj'
+    '_csrf-frontend' => 'adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TMVEDW7Xud9iy-IBLgSM9GzsneO076LC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/login'
+    'HTTP_COOKIE' => 'foji=2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj; _csrf-frontend=adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TMVEDW7Xud9iy-IBLgSM9GzsneO076LC%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '15632'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558873846.446
+    'REQUEST_TIME' => 1558873846
+    'argv' => []
+    'argc' => 0
+]
+2019-05-26 15:30:54 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][error][yii\base\ErrorException:64] yii\base\ErrorException: A void function must not return a value in C:\OSPanel\domains\localhost\foji-backend\common\models\LoginForm.php:27
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(100): ::spl_autoload_call()
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\SiteController->actionLogin()
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#3 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams()
+#4 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): frontend\controllers\SiteController->runAction()
+#5 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\web\Application->runAction()
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#7 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\web\Application->run()
+#8 {main}
+2019-05-26 15:30:54 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj'
+    '_csrf-frontend' => 'adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TMVEDW7Xud9iy-IBLgSM9GzsneO076LC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_COOKIE' => 'foji=2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj; _csrf-frontend=adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TMVEDW7Xud9iy-IBLgSM9GzsneO076LC%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '15636'
+    'REDIRECT_URL' => '/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558873854.069
+    'REQUEST_TIME' => 1558873854
+    'argv' => []
+    'argc' => 0
+]
+2019-05-26 15:30:57 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][error][ArgumentCountError] ArgumentCountError: Too few arguments to function frontend\models\SignupForm::__construct(), 0 passed in C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php on line 141 and at least 1 expected in C:\OSPanel\domains\localhost\foji-backend\frontend\models\SignupForm.php:21
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(141): frontend\models\SignupForm->__construct()
+#1 [internal function]: frontend\controllers\SiteController->actionSignup()
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#5 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2019-05-26 15:30:57 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj'
+    '_csrf-frontend' => 'adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TMVEDW7Xud9iy-IBLgSM9GzsneO076LC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_COOKIE' => 'foji=2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj; _csrf-frontend=adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TMVEDW7Xud9iy-IBLgSM9GzsneO076LC%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '15644'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558873857.765
+    'REQUEST_TIME' => 1558873857
+    'argv' => []
+    'argc' => 0
+]
+2019-05-26 16:03:03 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\OSPanel\domains\localhost\foji-backend\frontend/common/mail/emailConfirm.php in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, Object(yii\swiftmailer\Mailer))
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\mail\BaseMailer.php(302): yii\base\View->render('@app/common/mai...', Array, Object(yii\swiftmailer\Mailer))
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\mail\BaseMailer.php(194): yii\mail\BaseMailer->render('@app/common/mai...', Array, 'layouts/html')
+#3 C:\OSPanel\domains\localhost\foji-backend\frontend\models\SignupForm.php(46): yii\mail\BaseMailer->compose('@app/common/mai...', Array)
+#4 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(144): frontend\models\SignupForm->signup()
+#5 [internal function]: frontend\controllers\SiteController->actionSignup()
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#9 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#10 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2019-05-26 16:03:03 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'mfvJHz7QsXMV653bWgLCkYjWj4QWvmzsR1G2vmGMf07Ntp9aeoeGK2CPpLIjL4vTxLHcyS_5Fp8pNPmOVrozDQ=='
+    'SignupForm' => [
+        'email' => 'a.mel@list.ru'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj'
+    '_csrf-frontend' => 'adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TMVEDW7Xud9iy-IBLgSM9GzsneO076LC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '192'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_COOKIE' => 'foji=2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj; _csrf-frontend=adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TMVEDW7Xud9iy-IBLgSM9GzsneO076LC%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '15930'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558875783.141
+    'REQUEST_TIME' => 1558875783
+    'argv' => []
+    'argc' => 0
+]
+2019-05-26 18:09:56 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\OSPanel\domains\localhost\foji-backend\frontend/common/mail/emailConfirm.php in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, Object(yii\swiftmailer\Mailer))
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\mail\BaseMailer.php(302): yii\base\View->render('@app/common/mai...', Array, Object(yii\swiftmailer\Mailer))
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\mail\BaseMailer.php(194): yii\mail\BaseMailer->render('@app/common/mai...', Array, 'layouts/html')
+#3 C:\OSPanel\domains\localhost\foji-backend\frontend\models\SignupForm.php(46): yii\mail\BaseMailer->compose('@app/common/mai...', Array)
+#4 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(144): frontend\models\SignupForm->signup()
+#5 [internal function]: frontend\controllers\SiteController->actionSignup()
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#9 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#10 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2019-05-26 18:09:55 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => '_Qm5T4sb9u-R--pBSvQD227-mfgcMPmr9Hml69mzGQOpRO8Kz0zBt-Sf0ygz2UqZIpnKtSV3g9iaHOrb7oVVQA=='
+    'SignupForm' => [
+        'email' => 'a.mel@list.ru'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj'
+    '_csrf-frontend' => 'adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TMVEDW7Xud9iy-IBLgSM9GzsneO076LC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '192'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_COOKIE' => 'foji=2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj; _csrf-frontend=adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TMVEDW7Xud9iy-IBLgSM9GzsneO076LC%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '18105'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558883395.087
+    'REQUEST_TIME' => 1558883395
+    'argv' => []
+    'argc' => 0
+]
+2019-05-26 18:20:35 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\OSPanel\domains\localhost\foji-backend\common/mail\../common/mail/emailConfirm.php in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, Object(yii\swiftmailer\Mailer))
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\mail\BaseMailer.php(302): yii\base\View->render('../common/mail/...', Array, Object(yii\swiftmailer\Mailer))
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\mail\BaseMailer.php(194): yii\mail\BaseMailer->render('../common/mail/...', Array, 'layouts/html')
+#3 C:\OSPanel\domains\localhost\foji-backend\frontend\models\SignupForm.php(46): yii\mail\BaseMailer->compose('../common/mail/...', Array)
+#4 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(144): frontend\models\SignupForm->signup()
+#5 [internal function]: frontend\controllers\SiteController->actionSignup()
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#9 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#10 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2019-05-26 18:20:34 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => '_Qm5T4sb9u-R--pBSvQD227-mfgcMPmr9Hml69mzGQOpRO8Kz0zBt-Sf0ygz2UqZIpnKtSV3g9iaHOrb7oVVQA=='
+    'SignupForm' => [
+        'email' => 'a.mel@list.ru'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj'
+    '_csrf-frontend' => 'adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TMVEDW7Xud9iy-IBLgSM9GzsneO076LC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '207'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_COOKIE' => 'foji=2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj; _csrf-frontend=adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TMVEDW7Xud9iy-IBLgSM9GzsneO076LC%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '18289'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558884034.382
+    'REQUEST_TIME' => 1558884034
+    'argv' => []
+    'argc' => 0
+]
+2019-05-26 18:22:12 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\OSPanel\domains\localhost\foji-backend\common/mail\common/mail/emailConfirm.php in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, Object(yii\swiftmailer\Mailer))
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\mail\BaseMailer.php(302): yii\base\View->render('common/mail/ema...', Array, Object(yii\swiftmailer\Mailer))
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\mail\BaseMailer.php(194): yii\mail\BaseMailer->render('common/mail/ema...', Array, 'layouts/html')
+#3 C:\OSPanel\domains\localhost\foji-backend\frontend\models\SignupForm.php(46): yii\mail\BaseMailer->compose('common/mail/ema...', Array)
+#4 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(144): frontend\models\SignupForm->signup()
+#5 [internal function]: frontend\controllers\SiteController->actionSignup()
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#9 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#10 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2019-05-26 18:22:11 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => '_Qm5T4sb9u-R--pBSvQD227-mfgcMPmr9Hml69mzGQOpRO8Kz0zBt-Sf0ygz2UqZIpnKtSV3g9iaHOrb7oVVQA=='
+    'SignupForm' => [
+        'email' => 'a.mel@list.ru'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj'
+    '_csrf-frontend' => 'adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TMVEDW7Xud9iy-IBLgSM9GzsneO076LC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '207'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_COOKIE' => 'foji=2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj; _csrf-frontend=adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TMVEDW7Xud9iy-IBLgSM9GzsneO076LC%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '18308'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558884131.515
+    'REQUEST_TIME' => 1558884131
+    'argv' => []
+    'argc' => 0
+]
+2019-05-26 18:22:33 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\OSPanel\domains\localhost\foji-backend\common/mail\common/mail/emailConfirm.php in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, Object(yii\swiftmailer\Mailer))
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\mail\BaseMailer.php(302): yii\base\View->render('common/mail/ema...', Array, Object(yii\swiftmailer\Mailer))
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\mail\BaseMailer.php(194): yii\mail\BaseMailer->render('common/mail/ema...', Array, 'layouts/html')
+#3 C:\OSPanel\domains\localhost\foji-backend\frontend\models\SignupForm.php(46): yii\mail\BaseMailer->compose('common/mail/ema...', Array)
+#4 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(144): frontend\models\SignupForm->signup()
+#5 [internal function]: frontend\controllers\SiteController->actionSignup()
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#9 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#10 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2019-05-26 18:22:32 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => '_Qm5T4sb9u-R--pBSvQD227-mfgcMPmr9Hml69mzGQOpRO8Kz0zBt-Sf0ygz2UqZIpnKtSV3g9iaHOrb7oVVQA=='
+    'SignupForm' => [
+        'email' => 'a.mel@list.ru'
+        'password' => '321456'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj'
+    '_csrf-frontend' => 'adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TMVEDW7Xud9iy-IBLgSM9GzsneO076LC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '207'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_COOKIE' => 'foji=2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj; _csrf-frontend=adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TMVEDW7Xud9iy-IBLgSM9GzsneO076LC%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '18314'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558884152.614
+    'REQUEST_TIME' => 1558884152
+    'argv' => []
+    'argc' => 0
+]
+2019-05-26 18:23:20 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\OSPanel\domains\localhost\foji-backend\common/mail\common\mail\emailConfirm.php in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, Object(yii\swiftmailer\Mailer))
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\mail\BaseMailer.php(302): yii\base\View->render('common\\mail\\ema...', Array, Object(yii\swiftmailer\Mailer))
+#2 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\mail\BaseMailer.php(194): yii\mail\BaseMailer->render('common\\mail\\ema...', Array, 'layouts/html')
+#3 C:\OSPanel\domains\localhost\foji-backend\frontend\models\SignupForm.php(46): yii\mail\BaseMailer->compose('common\\mail\\ema...', Array)
+#4 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(144): frontend\models\SignupForm->signup()
+#5 [internal function]: frontend\controllers\SiteController->actionSignup()
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#9 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#10 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2019-05-26 18:23:19 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => '_Qm5T4sb9u-R--pBSvQD227-mfgcMPmr9Hml69mzGQOpRO8Kz0zBt-Sf0ygz2UqZIpnKtSV3g9iaHOrb7oVVQA=='
+    'SignupForm' => [
+        'email' => 'a.mel@list.ru'
+        'password' => '321456'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj'
+    '_csrf-frontend' => 'adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TMVEDW7Xud9iy-IBLgSM9GzsneO076LC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '207'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_COOKIE' => 'foji=2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj; _csrf-frontend=adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TMVEDW7Xud9iy-IBLgSM9GzsneO076LC%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '18324'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558884199.988
+    'REQUEST_TIME' => 1558884199
+    'argv' => []
+    'argc' => 0
+]
