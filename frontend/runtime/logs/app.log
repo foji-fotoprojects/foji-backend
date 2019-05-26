@@ -3305,3 +3305,91 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2019-05-26 20:43:19 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\swiftmailer\Message::useFileTransport in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\BaseObject.php:163
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\BaseYii.php(546): yii\base\BaseObject->__set('useFileTranspor...', false)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\swiftmailer\Message), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#4 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\swiftmailer...', Array, Array)
+#5 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\swiftmailer...', Array, Array)
+#6 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\mail\BaseMailer.php(236): yii\BaseYii::createObject(Array)
+#7 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\mail\BaseMailer.php(175): yii\mail\BaseMailer->createMessage()
+#8 C:\OSPanel\domains\localhost\foji-backend\frontend\models\SignupForm.php(47): yii\mail\BaseMailer->compose('emailConfirm', Array)
+#9 C:\OSPanel\domains\localhost\foji-backend\frontend\controllers\SiteController.php(144): frontend\models\SignupForm->signup()
+#10 [internal function]: frontend\controllers\SiteController->actionSignup()
+#11 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#14 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#15 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2019-05-26 20:43:19 [127.0.0.1][-][2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'pxXGQfnQ466btYmlLuWQxcT73dUnQZR8bvdiJ9niy5nzWJAEvYfU9u7RsMxXyNmHiJyOmB4G7g8Aki0X7tSH2g=='
+    'SignupForm' => [
+        'email' => 'a.mel@list.ru'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj'
+    '_csrf-frontend' => 'adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TMVEDW7Xud9iy-IBLgSM9GzsneO076LC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '192'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/signup'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_COOKIE' => 'foji=2m1a0ve8r2jb8jv6ll5qjvbu4offtgqj; _csrf-frontend=adf9dfbd1cb37ea76a1634b1d5951c575f3622bdc20ce097392f95a48f52adf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TMVEDW7Xud9iy-IBLgSM9GzsneO076LC%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '21216'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1558892599.036
+    'REQUEST_TIME' => 1558892599
+    'argv' => []
+    'argc' => 0
+]
