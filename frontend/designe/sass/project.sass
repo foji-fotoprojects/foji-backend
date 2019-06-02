@@ -10,7 +10,6 @@
     display: flex
   .arrow-left, .arrow-right
     width: 95px
-    //background-color: grey
     text-align: center
   .project-information
     width: 100%
@@ -18,3 +17,117 @@
     margin-bottom: 30px
     .city
       font-weight: normal
+  .project-content
+    display: flex
+    justify-content: space-between
+  .project-main-information
+    width: 540px
+  .project-image
+    width: 540px
+    height: 360px
+  .project-tabs
+    margin-bottom: 20px
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.7)
+    .tabs-container
+      max-width: 100%
+      margin: 50px auto 20px
+    .tabs
+      display: flex
+      list-style: none
+      margin-bottom: 20px
+      border-bottom: 0.5px solid rgba(0, 0, 0, 0.7)
+      &>li:not(:last-child)
+        margin-right: 25px
+    .tabs-item
+      padding-bottom: 10px
+      cursor: pointer
+      &.active
+        box-shadow: inset 0 -4px 0 0 #FF4546
+        color: #000
+    .tabs-panel
+      display: none
+    .tabs-panel.active
+      display: block
+  .project-included
+    display: flex
+    flex-wrap: wrap
+    margin-top: 20px
+    padding-bottom: 10px
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.7)
+  .project-included-item
+    display: flex
+    width: 34%
+    margin-bottom: 10px
+    svg
+      margin-right: 10px
+  .project-studio
+    margin-top: 20px
+    padding-bottom: 20px
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.7)
+    span
+      font-weight: normal
+  .project-photographer
+    margin-top: 20px
+    padding-bottom: 20px
+  .project-photographer-name
+    display: flex
+    align-items: center
+    .text
+      font-weight: 400
+    svg
+      margin-right: 10px
+  .project-photographer-description
+    margin-top: 15px
+  .project-sub-information
+    width: 350px
+  .project-characteristics
+    display: flex
+    flex-wrap: wrap
+  .project-characteristics-item
+    display: flex
+    width: 50%
+    margin-bottom: 15px
+    svg
+      margin-right: 10px
+  .project-characteristics-text
+    display: flex
+    flex-direction: column
+  .project-processing
+    margin-bottom: 15px
+    span
+      font-weight: normal
+  .project-payment
+    span
+      font-weight: normal
+  .project-pricing
+    display: flex
+    justify-content: space-between
+    margin-top: 25px
+    margin-bottom: 25px
+    padding-top: 25px
+    border-top: 0.5px solid rgba(0, 0, 0, 0.7)
+  .project-prepayment
+    .text_big
+      font-weight: bold
+  .project-price
+    text-align: right
+    .text_big
+      font-size: 30px
+      font-weight: bold
+  .btn-project
+    width: 100%
+    height: 50px
+    cursor: pointer
+  .project-location
+    margin-top: 25px
+    border-top: 0.5px solid rgba(0, 0, 0, 0.7)
+    padding-top: 25px
+  .project-address
+    display: flex
+    align-items: center
+    margin-bottom: 15px
+    svg
+      margin-right: 10px
+  .project-map
+    width: 100%
+    height: 215px

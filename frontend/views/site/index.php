@@ -125,6 +125,10 @@ use yii\helpers\Html;
                             </svg>
                         </div>
                     </div>
+                    <div class="filter-form-half">
+                        <input type="hidden" id="datepicker">
+                    </div>
+                    <div class="filter-form-half"></div>
                 </div>
                 <a class="btn btn_border_black btn_transparent btn-new-project" href="new.html">Создать проект</a>
             </header>

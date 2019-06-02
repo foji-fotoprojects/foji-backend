@@ -364,8 +364,8 @@ a {
   top: -45px;
   left: -46px;
   display: none;
-  width: 585px;
-  height: 300px;
+  width: auto;
+  height: 350px;
   padding: 45px 45px 0 45px;
   background-color: #ffffff;
   border: 1px solid #000; }
@@ -690,6 +690,118 @@ a.datepicker__prev, a.datepicker__next {
     margin-bottom: 30px; }
     .project .project-header .city {
       font-weight: normal; }
+  .project .project-content {
+    display: flex;
+    justify-content: space-between; }
+  .project .project-main-information {
+    width: 540px; }
+  .project .project-image {
+    width: 540px;
+    height: 360px; }
+  .project .project-tabs {
+    margin-bottom: 20px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.7); }
+    .project .project-tabs .tabs-container {
+      max-width: 100%;
+      margin: 50px auto 20px; }
+    .project .project-tabs .tabs {
+      display: flex;
+      list-style: none;
+      margin-bottom: 20px;
+      border-bottom: 0.5px solid rgba(0, 0, 0, 0.7); }
+      .project .project-tabs .tabs > li:not(:last-child) {
+        margin-right: 25px; }
+    .project .project-tabs .tabs-item {
+      padding-bottom: 10px;
+      cursor: pointer; }
+      .project .project-tabs .tabs-item.active {
+        box-shadow: inset 0 -4px 0 0 #FF4546;
+        color: #000; }
+    .project .project-tabs .tabs-panel {
+      display: none; }
+    .project .project-tabs .tabs-panel.active {
+      display: block; }
+  .project .project-included {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.7); }
+  .project .project-included-item {
+    display: flex;
+    width: 34%;
+    margin-bottom: 10px; }
+    .project .project-included-item svg {
+      margin-right: 10px; }
+  .project .project-studio {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.7); }
+    .project .project-studio span {
+      font-weight: normal; }
+  .project .project-photographer {
+    margin-top: 20px;
+    padding-bottom: 20px; }
+  .project .project-photographer-name {
+    display: flex;
+    align-items: center; }
+    .project .project-photographer-name .text {
+      font-weight: 400; }
+    .project .project-photographer-name svg {
+      margin-right: 10px; }
+  .project .project-photographer-description {
+    margin-top: 15px; }
+  .project .project-sub-information {
+    width: 350px; }
+  .project .project-characteristics {
+    display: flex;
+    flex-wrap: wrap; }
+  .project .project-characteristics-item {
+    display: flex;
+    width: 50%;
+    margin-bottom: 15px; }
+    .project .project-characteristics-item svg {
+      margin-right: 10px; }
+  .project .project-characteristics-text {
+    display: flex;
+    flex-direction: column; }
+  .project .project-processing {
+    margin-bottom: 15px; }
+    .project .project-processing span {
+      font-weight: normal; }
+  .project .project-payment span {
+    font-weight: normal; }
+  .project .project-pricing {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.7); }
+  .project .project-prepayment .text_big {
+    font-weight: bold; }
+  .project .project-price {
+    text-align: right; }
+    .project .project-price .text_big {
+      font-size: 30px;
+      font-weight: bold; }
+  .project .btn-project {
+    width: 100%;
+    height: 50px;
+    cursor: pointer; }
+  .project .project-location {
+    margin-top: 25px;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.7);
+    padding-top: 25px; }
+  .project .project-address {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; }
+    .project .project-address svg {
+      margin-right: 10px; }
+  .project .project-map {
+    width: 100%;
+    height: 215px; }
 
 .modal-sign-in {
   display: none;
@@ -717,6 +829,53 @@ a.datepicker__prev, a.datepicker__next {
     justify-content: center;
     font-size: 30px;
     font-weight: 700; }
+
+.main .filter-form-half {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 50%;
+  background: #61dafb;
+  height: 100px;
+  float: left; }
+
+@media (max-width: 600px) {
+  .main .filter-form {
+    width: 100%;
+    box-sizing: border-box;
+    left: 0;
+    padding: 20px; } }
+.main .filter-form-half {
+  width: 100%; }
+
+.main .btn-filter-projects-close, .btn-filter-projects {
+  transform: scale(0.66); }
+
+.datepicker {
+  width: 100%; }
+
+.datepicker__wrapper {
+  width: 100%;
+  border: none;
+  color: black; }
+
+.datepicker__header {
+  color: black !important;
+  padding: 3.75px 50px;
+  background: #FFFFFF; }
+
+thead {
+  color: black; }
+
+.datepicker__title {
+  color: black; }
+
+a.datepicker__prev, a.datepicker__next {
+  color: black;
+  width: 15px; }
 
 @media (max-width: 1139px) {
   .container {

@@ -12,9 +12,11 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
+        './modules/datepicker/css/datepicker.minimal.css',
         'css/style.css',
     ];
     public $js = [
+        './modules/datepicker/datepicker.js',
         'js/script.js'
     ];
     public $depends = [
