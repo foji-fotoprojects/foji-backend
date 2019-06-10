@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Html;
+$this->registerJsFile('js/project.js');
 
 ?>
 
@@ -22,39 +23,145 @@ use yii\helpers\Html;
                     </p>
                     <h2><?= $project['name'] ?></h2>
                     <p class="text"><span class="city">Город:</span> В базе не указан город</p>
+                    <div class="stars mobile">
+                        <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.0404 5.78571L10.7132 5.05582L8.33125 0.504395L5.94929 5.05582L0.622131 5.78571L4.47669 9.32835L3.56733 14.3308L8.33125 11.969L13.0952 14.3308L12.1858 9.32835L16.0404 5.78571Z"
+                                  fill="#FF4546"/>
+                        </svg>
+                        <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.0404 5.78571L10.7132 5.05582L8.33125 0.504395L5.94929 5.05582L0.622131 5.78571L4.47669 9.32835L3.56733 14.3308L8.33125 11.969L13.0952 14.3308L12.1858 9.32835L16.0404 5.78571Z"
+                                  fill="#FF4546"/>
+                        </svg>
+                        <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.0404 5.78571L10.7132 5.05582L8.33125 0.504395L5.94929 5.05582L0.622131 5.78571L4.47669 9.32835L3.56733 14.3308L8.33125 11.969L13.0952 14.3308L12.1858 9.32835L16.0404 5.78571Z"
+                                  fill="#FF4546"/>
+                        </svg>
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.7733 5.78571L10.4462 5.05582L8.06421 0.504395L5.68226 5.05582L0.355103 5.78571L4.20966 9.32835L3.3003 14.3308L8.06421 11.969L12.8281 14.3308L11.9188 9.32835L15.7733 5.78571ZM8.06421 10.846L8.05005 10.8534L8.06421 2.75044L9.74606 5.96373L13.5078 6.48L10.786 8.98121L11.4279 12.5135L8.06421 10.846Z"
+                                  fill="#FF4546"/>
+                        </svg>
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.5062 5.78571L10.1791 5.05582L7.79712 0.504395L5.41517 5.05582L0.0880127 5.78571L3.94257 9.32835L3.03321 14.3308L7.79712 11.969L12.561 14.3308L11.6517 9.32835L15.5062 5.78571ZM7.79712 10.846L4.43186 12.5149L5.07534 8.98121L2.35355 6.48L6.11528 5.96373L7.79712 2.75044L9.47897 5.96373L13.2407 6.48L10.5189 8.98121L11.1608 12.5135L7.79712 10.846Z"
+                                  fill="#FF4546"/>
+                        </svg>
+                    </div>
                 </header>
                 <div class="project-content">
                     <div class="project-main-information">
-                        <?= Html::img('images/project/lovestory.jpg', ['class' => 'project-image', 'alt' => $project['name']]) ?>
-                        <div class="project-tabs">
+                        <div class="project-slider">
+                            <?= Html::img('images/project/lovestory.jpg', ['class' => 'project-image-placeholder', 'alt' => $project['name']]) ?>
+                            <img class="project-main-slide project-slide-prev" src="images/project/pair.png"
+                                 alt="">
+                            <img class="project-main-slide project-slide-prev "
+                                 src="images/project/lovestory.jpg" alt="">
+                        </div>
+                        <div class="project-preview-wrapper">
+                            <div class="project-preview-block">
+
+                            </div>
+                            <div class="hasLefts"><</div>
+                            <div class="hasRights">></div>
+                        </div>
+                        <div class="project-tabs desktop">
                             <div class="tabs-container">
                                 <ul class="tabs">
-                                    <li class="tabs-item text_big active">
+                                    <li class="tabs-item text_big active switchable">
                                         <p>Описание</p>
                                     </li>
-                                    <li class="tabs-item text_big">
+                                    <li class="tabs-item text_big switchable">
                                         <p>Отзывы</p>
                                     </li>
                                 </ul>
                                 <div class="tabs-content">
-                                    <div class="text tabs-panel active" data-index="0">
+                                    <div class="text tabs-panel switchable active" data-index="0">
                                         <?= $project['info'] ?>
                                     </div>
-                                    <div class="text tabs-panel" data-index="1">
-                                        Отзывы о фотопроекте. Весьма существенно следующее: диониссийское
-                                        начало дает синтез искусств. Мимезис неравномерен. Эпитет готично
-                                        заканчивает символический метафоризм.
-                                        Социально-психологический фактор изящно дает суггестивный декаданс.
-                                        Интенция изящно просветляет суггестивный символический метафоризм.
-                                        Выразительное фактурно. Текст, так или иначе, образует сокращенный
-                                        горизонт ожидания. Теория вчувствования свободна. Восприятие
-                                        сотворчества просветляет комплекс агрессивности. Инвариант дает
-                                        незначительный синхронический подход.
+                                    <div class="text tabs-panel switchable comments" data-index="1">
+                                        <div class="comment">
+                                            <div class="comment-header">
+                                                <img src="./images/project/avatar.svg" alt="">
+                                                <div class="name">Татьяна Щербакова</div>
+                                                <div class="stars">
+                                                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.0404 5.78571L10.7132 5.05582L8.33125 0.504395L5.94929 5.05582L0.622131 5.78571L4.47669 9.32835L3.56733 14.3308L8.33125 11.969L13.0952 14.3308L12.1858 9.32835L16.0404 5.78571Z"
+                                                              fill="#FF4546"/>
+                                                    </svg>
+                                                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.0404 5.78571L10.7132 5.05582L8.33125 0.504395L5.94929 5.05582L0.622131 5.78571L4.47669 9.32835L3.56733 14.3308L8.33125 11.969L13.0952 14.3308L12.1858 9.32835L16.0404 5.78571Z"
+                                                              fill="#FF4546"/>
+                                                    </svg>
+                                                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.0404 5.78571L10.7132 5.05582L8.33125 0.504395L5.94929 5.05582L0.622131 5.78571L4.47669 9.32835L3.56733 14.3308L8.33125 11.969L13.0952 14.3308L12.1858 9.32835L16.0404 5.78571Z"
+                                                              fill="#FF4546"/>
+                                                    </svg>
+                                                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.0404 5.78571L10.7132 5.05582L8.33125 0.504395L5.94929 5.05582L0.622131 5.78571L4.47669 9.32835L3.56733 14.3308L8.33125 11.969L13.0952 14.3308L12.1858 9.32835L16.0404 5.78571Z"
+                                                              fill="#FF4546"/>
+                                                    </svg>
+                                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M15.5062 5.78571L10.1791 5.05582L7.79712 0.504395L5.41517 5.05582L0.0880127 5.78571L3.94257 9.32835L3.03321 14.3308L7.79712 11.969L12.561 14.3308L11.6517 9.32835L15.5062 5.78571ZM7.79712 10.846L4.43186 12.5149L5.07534 8.98121L2.35355 6.48L6.11528 5.96373L7.79712 2.75044L9.47897 5.96373L13.2407 6.48L10.5189 8.98121L11.1608 12.5135L7.79712 10.846Z"
+                                                              fill="#FF4546"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Отзыв тратата
+                                            </p>
+                                        </div>
+                                        <div class="comment">
+                                            <div class="comment-header">
+                                                <img src="./images/project/avatar.svg" alt="">
+                                                <div class="name">Татьяна Щербакова</div>
+                                                <div class="stars">
+                                                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.0404 5.78571L10.7132 5.05582L8.33125 0.504395L5.94929 5.05582L0.622131 5.78571L4.47669 9.32835L3.56733 14.3308L8.33125 11.969L13.0952 14.3308L12.1858 9.32835L16.0404 5.78571Z"
+                                                              fill="#FF4546"/>
+                                                    </svg>
+                                                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.0404 5.78571L10.7132 5.05582L8.33125 0.504395L5.94929 5.05582L0.622131 5.78571L4.47669 9.32835L3.56733 14.3308L8.33125 11.969L13.0952 14.3308L12.1858 9.32835L16.0404 5.78571Z"
+                                                              fill="#FF4546"/>
+                                                    </svg>
+                                                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.0404 5.78571L10.7132 5.05582L8.33125 0.504395L5.94929 5.05582L0.622131 5.78571L4.47669 9.32835L3.56733 14.3308L8.33125 11.969L13.0952 14.3308L12.1858 9.32835L16.0404 5.78571Z"
+                                                              fill="#FF4546"/>
+                                                    </svg>
+                                                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.0404 5.78571L10.7132 5.05582L8.33125 0.504395L5.94929 5.05582L0.622131 5.78571L4.47669 9.32835L3.56733 14.3308L8.33125 11.969L13.0952 14.3308L12.1858 9.32835L16.0404 5.78571Z"
+                                                              fill="#FF4546"/>
+                                                    </svg>
+                                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M15.5062 5.78571L10.1791 5.05582L7.79712 0.504395L5.41517 5.05582L0.0880127 5.78571L3.94257 9.32835L3.03321 14.3308L7.79712 11.969L12.561 14.3308L11.6517 9.32835L15.5062 5.78571ZM7.79712 10.846L4.43186 12.5149L5.07534 8.98121L2.35355 6.48L6.11528 5.96373L7.79712 2.75044L9.47897 5.96373L13.2407 6.48L10.5189 8.98121L11.1608 12.5135L7.79712 10.846Z"
+                                                              fill="#FF4546"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Отзыв тратата
+                                            </p>
+                                        </div>
+                                        <div class="btn btn_border_red btn_red btn-project btn-comment">
+                                            Оставить отзыв
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="project-included">
+                        <div class="project-included desktop">
                             <?php if ($project['makeup']): ?>
                                 <div class="project-included-item">
                                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
@@ -97,11 +204,11 @@ use yii\helpers\Html;
                             <?php endif; ?>
                         </div>
                         <?php if ($project['studio']): ?>
-                            <div class="project-studio">
+                            <div class="project-studio desktop">
                                 <p class="text"><span>Студия: </span>"<?= $project['studio'] ?>"</p>
                             </div>
                         <?php endif; ?>
-                        <div class="project-photographer">
+                        <div class="project-photographer desktop">
                             <div class="project-photographer-name">
                                 <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
@@ -205,6 +312,21 @@ use yii\helpers\Html;
                         <div class="project-payment">
                             <p class="text"><span>Способ оплаты:</span> <?= $project['payment_method'] ?></p>
                         </div>
+                        <div class="project-location mobile">
+                            <div class="project-address">
+                                <svg width="16" height="21" viewBox="0 0 16 21" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.7651 7.42645C14.7651 8.65888 14.3623 10.0486 13.6974 11.4842C13.0367 12.9105 12.1466 14.3203 11.2409 15.5759C10.3372 16.8288 9.4313 17.9099 8.7506 18.6783C8.60145 18.8466 8.46336 18.9997 8.33875 19.136C8.21414 18.9997 8.07604 18.8466 7.92689 18.6783C7.24619 17.9099 6.34029 16.8288 5.43658 15.5759C4.53091 14.3203 3.64075 12.9105 2.98013 11.4842C2.31522 10.0486 1.91235 8.65888 1.91235 7.42645C1.91235 3.87725 4.78955 1.00006 8.33875 1.00006C11.8879 1.00006 14.7651 3.87725 14.7651 7.42645Z"
+                                          stroke="black" stroke-width="2"/>
+                                    <circle cx="8.33889" cy="7.42644" r="2.62563" stroke="black"
+                                            stroke-width="1.5"/>
+                                </svg>
+                                <p class="text"><?= $project['location'] ?></p>
+                            </div>
+                        </div>
+                        <div class="project-map-link mobile">
+                            <p><a href="#map">На карте</a></p>
+                        </div>
                         <div class="project-pricing">
                             <div class="project-prepayment">
                                 <p class="text">Предоплата:</p>
@@ -216,6 +338,102 @@ use yii\helpers\Html;
                             </div>
                         </div>
                         <div class="btn btn_border_red btn_red btn-project">Записаться</div>
+                        <div class="project-sharing">
+                            <div class="project-sharing-text">Поделиться в соц. сетях:</div>
+                            <div class="ya-share2"
+                                 data-services="vkontakte,facebook,twitter,odnoklassniki"></div>
+                        </div>
+                        <div class="project-tabs mobile">
+                            <div class="tabs-container">
+                                <ul class="tabs">
+                                    <li class="tabs-item text_big active">
+                                        <p>Описание</p>
+                                    </li>
+                                </ul>
+                                <div class="tabs-content">
+                                    <div class="text tabs-panel active">
+                                        <?= $project['info'] ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-included mobile">
+                            <?php if ($project['makeup']): ?>
+                                <div class="project-included-item">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 7.46296L4.5 13.0139L13.5 1.40741" stroke="black"
+                                              stroke-width="2"/>
+                                    </svg>
+                                    <p class="text">Макияж</p>
+                                </div>
+                            <?php endif; ?>
+                            <?php if ($project['costume']): ?>
+                                <div class="project-included-item">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 7.46296L4.5 13.0139L13.5 1.40741" stroke="black"
+                                              stroke-width="2"/>
+                                    </svg>
+                                    <p class="text">Костюм</p>
+                                </div>
+                            <?php endif; ?>
+                            <?php if ($project['hairstyle']): ?>
+                                <div class="project-included-item">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 7.46296L4.5 13.0139L13.5 1.40741" stroke="black"
+                                              stroke-width="2"/>
+                                    </svg>
+                                    <p class="text">Прическа</p>
+                                </div>
+                            <?php endif; ?>
+                            <?php if ($project['studio']): ?>
+                                <div class="project-included-item">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 7.46296L4.5 13.0139L13.5 1.40741" stroke="black"
+                                              stroke-width="2"/>
+                                    </svg>
+                                    <p class="text">Студия</p>
+                                </div>
+                            <?php endif; ?>
+                        </div>
+                        <?php if ($project['studio']): ?>
+                            <div class="project-studio mobile">
+                                <p class="text"><span>Студия: </span>"<?= $project['studio'] ?>"</p>
+                            </div>
+                        <?php endif; ?>
+                        <div class="project-photographer mobile">
+                            <div class="project-photographer-name">
+                                <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.17451 0.624834C5.12878 0.644384 5.05721 0.690114 5.01471 0.729214C4.97238 0.768314 4.72775 1.22153 4.4702 1.73663L4.00083 2.67231L2.24354 2.68217C0.525344 2.69186 0.483014 2.69186 0.394954 2.76037C0.345994 2.79624 0.274254 2.86798 0.238384 2.91694C0.170044 3.00483 0.170044 3.00806 0.170044 7.89199C0.170044 12.7759 0.170044 12.7791 0.238554 12.8672C0.274424 12.9162 0.346164 12.9879 0.395124 13.0238L0.483185 13.0923H8.50006H16.5171L16.6052 13.0238C16.6541 12.9879 16.7259 12.9162 16.7617 12.8672C16.8302 12.7791 16.8302 12.7759 16.8302 7.89199C16.8302 3.00806 16.8302 3.00483 16.7617 2.91677C16.7259 2.86781 16.6541 2.79607 16.6052 2.7602C16.5171 2.69169 16.4748 2.69169 14.7566 2.682L12.9993 2.67214L12.5297 1.73646C12.2722 1.22136 12.0277 0.768144 11.9852 0.729044C11.9427 0.689944 11.8645 0.644214 11.8157 0.624664C11.6918 0.575874 5.29198 0.579104 5.17451 0.624834ZM11.7734 2.56793C12.031 3.08626 12.2754 3.53948 12.3179 3.57858C12.3604 3.61768 12.4386 3.66341 12.4874 3.68296C12.5495 3.70574 13.1297 3.71883 14.1925 3.71883H15.8031V7.89199V12.0651H8.50006H1.19702V7.89199V3.71883H2.8076C3.87044 3.71883 4.45082 3.70574 4.5127 3.68296C4.56166 3.66341 4.63986 3.61768 4.68219 3.57858C4.72452 3.53948 4.96915 3.08626 5.2267 2.56793L5.69624 1.63225H8.50006H11.3039L11.7734 2.56793Z"
+                                          fill="black"/>
+                                    <path d="M8.05996 3.21661C7.31009 3.33068 6.71339 3.56545 6.13641 3.97294C5.28216 4.57627 4.65299 5.51518 4.41822 6.52906C4.33339 6.90068 4.31724 7.70937 4.38881 8.07113C4.55507 8.91553 4.96256 9.67203 5.58204 10.2881C6.19166 10.8977 6.87965 11.276 7.72404 11.4682C8.05656 11.5432 8.94345 11.5432 9.27597 11.4682C10.1204 11.2758 10.8116 10.8945 11.418 10.2881C12.0244 9.68172 12.4058 8.9905 12.5981 8.1461C12.6372 7.97661 12.6503 7.75493 12.6503 7.37022C12.6503 6.98551 12.6372 6.76383 12.5981 6.59434C12.4057 5.74995 12.0276 5.06196 11.418 4.45234C10.8148 3.84595 10.104 3.45461 9.27597 3.27543C9.0446 3.22647 8.25886 3.18737 8.05996 3.21661ZM9.29892 4.33487C10.2802 4.57933 11.0399 5.23468 11.3986 6.14112C11.5648 6.55847 11.6138 6.84526 11.6104 7.38654C11.6104 7.99939 11.5387 8.31254 11.291 8.82101C10.9812 9.44695 10.577 9.85121 9.95104 10.1609C9.4424 10.4088 9.12943 10.4804 8.51658 10.4804C8.14819 10.4836 7.96238 10.4673 7.76671 10.4217C7.16678 10.2815 6.69741 10.0272 6.28329 9.61967C5.85285 9.19586 5.59207 8.71986 5.44859 8.1036C5.36376 7.74167 5.36376 6.99843 5.44859 6.6365C5.58884 6.03334 5.85285 5.54765 6.26697 5.13676C6.74943 4.6509 7.24175 4.4129 8.07645 4.25973C8.27195 4.22403 9.0446 4.26976 9.29892 4.33487Z"
+                                          fill="black"/>
+                                    <path d="M8.0437 4.81091C6.87002 5.04568 5.89185 6.2095 5.89185 7.37026C5.89185 8.7102 7.16004 9.97839 8.49998 9.97839C9.31836 9.97839 10.1888 9.47638 10.6811 8.72652C11.2417 7.86258 11.2417 6.87794 10.6811 6.014C10.0847 5.1011 9.01848 4.61541 8.0437 4.81091ZM8.86531 5.84128C9.58254 5.99122 10.065 6.60424 10.065 7.37043C10.065 8.2767 9.40642 8.93527 8.50015 8.93527C7.46009 8.93527 6.77873 8.08443 6.97117 7.02482C7.12434 6.17703 7.9655 5.65207 8.86531 5.84128Z"
+                                          fill="black"/>
+                                </svg>
+                                <p class="text">Наталья Васильева</p>
+                            </div>
+                            <div class="project-photographer-description">
+                                <p class="text">
+                                    Информация о фотографе. Весьма существенно следующее: диониссийское начало
+                                    дает синтез искусств. Мимезис неравномерен. Эпитет готично заканчивает
+                                    символический метафоризм.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project-tabs mobile">
+                            <div class="tabs-container">
+                                <ul class="tabs">
+                                    <li class="tabs-item text_big active">
+                                        <p>Карта</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="project-location">
                             <div class="project-address">
                                 <svg width="16" height="21" viewBox="0 0 16 21" fill="none"
@@ -229,6 +447,95 @@ use yii\helpers\Html;
                             </div>
                             <div id="map" class="project-map">
 
+                            </div>
+                        </div>
+                        <div class="project-tabs mobile">
+                            <div class="tabs-container">
+                                <ul class="tabs">
+                                    <li class="tabs-item text_big active">
+                                        <p>Отзывы</p>
+                                    </li>
+                                </ul>
+                                <div class="tabs-content">
+                                    <div class="comments">
+                                        <div class="comment">
+                                            <div class="comment-header">
+                                                <img src="./images/project/avatar.svg" alt="">
+                                                <div class="name">Татьяна Щербакова</div>
+                                                <div class="stars">
+                                                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.0404 5.78571L10.7132 5.05582L8.33125 0.504395L5.94929 5.05582L0.622131 5.78571L4.47669 9.32835L3.56733 14.3308L8.33125 11.969L13.0952 14.3308L12.1858 9.32835L16.0404 5.78571Z"
+                                                              fill="#FF4546"/>
+                                                    </svg>
+                                                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.0404 5.78571L10.7132 5.05582L8.33125 0.504395L5.94929 5.05582L0.622131 5.78571L4.47669 9.32835L3.56733 14.3308L8.33125 11.969L13.0952 14.3308L12.1858 9.32835L16.0404 5.78571Z"
+                                                              fill="#FF4546"/>
+                                                    </svg>
+                                                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.0404 5.78571L10.7132 5.05582L8.33125 0.504395L5.94929 5.05582L0.622131 5.78571L4.47669 9.32835L3.56733 14.3308L8.33125 11.969L13.0952 14.3308L12.1858 9.32835L16.0404 5.78571Z"
+                                                              fill="#FF4546"/>
+                                                    </svg>
+                                                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.0404 5.78571L10.7132 5.05582L8.33125 0.504395L5.94929 5.05582L0.622131 5.78571L4.47669 9.32835L3.56733 14.3308L8.33125 11.969L13.0952 14.3308L12.1858 9.32835L16.0404 5.78571Z"
+                                                              fill="#FF4546"/>
+                                                    </svg>
+                                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M15.5062 5.78571L10.1791 5.05582L7.79712 0.504395L5.41517 5.05582L0.0880127 5.78571L3.94257 9.32835L3.03321 14.3308L7.79712 11.969L12.561 14.3308L11.6517 9.32835L15.5062 5.78571ZM7.79712 10.846L4.43186 12.5149L5.07534 8.98121L2.35355 6.48L6.11528 5.96373L7.79712 2.75044L9.47897 5.96373L13.2407 6.48L10.5189 8.98121L11.1608 12.5135L7.79712 10.846Z"
+                                                              fill="#FF4546"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Отзыв тратата
+                                            </p>
+                                        </div>
+                                        <div class="comment">
+                                            <div class="comment-header">
+                                                <img src="./images/project/avatar.svg" alt="">
+                                                <div class="name">Татьяна Щербакова</div>
+                                                <div class="stars">
+                                                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.0404 5.78571L10.7132 5.05582L8.33125 0.504395L5.94929 5.05582L0.622131 5.78571L4.47669 9.32835L3.56733 14.3308L8.33125 11.969L13.0952 14.3308L12.1858 9.32835L16.0404 5.78571Z"
+                                                              fill="#FF4546"/>
+                                                    </svg>
+                                                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.0404 5.78571L10.7132 5.05582L8.33125 0.504395L5.94929 5.05582L0.622131 5.78571L4.47669 9.32835L3.56733 14.3308L8.33125 11.969L13.0952 14.3308L12.1858 9.32835L16.0404 5.78571Z"
+                                                              fill="#FF4546"/>
+                                                    </svg>
+                                                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.0404 5.78571L10.7132 5.05582L8.33125 0.504395L5.94929 5.05582L0.622131 5.78571L4.47669 9.32835L3.56733 14.3308L8.33125 11.969L13.0952 14.3308L12.1858 9.32835L16.0404 5.78571Z"
+                                                              fill="#FF4546"/>
+                                                    </svg>
+                                                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.0404 5.78571L10.7132 5.05582L8.33125 0.504395L5.94929 5.05582L0.622131 5.78571L4.47669 9.32835L3.56733 14.3308L8.33125 11.969L13.0952 14.3308L12.1858 9.32835L16.0404 5.78571Z"
+                                                              fill="#FF4546"/>
+                                                    </svg>
+                                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M15.5062 5.78571L10.1791 5.05582L7.79712 0.504395L5.41517 5.05582L0.0880127 5.78571L3.94257 9.32835L3.03321 14.3308L7.79712 11.969L12.561 14.3308L11.6517 9.32835L15.5062 5.78571ZM7.79712 10.846L4.43186 12.5149L5.07534 8.98121L2.35355 6.48L6.11528 5.96373L7.79712 2.75044L9.47897 5.96373L13.2407 6.48L10.5189 8.98121L11.1608 12.5135L7.79712 10.846Z"
+                                                              fill="#FF4546"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Отзыв тратата
+                                            </p>
+                                        </div>
+                                        <div class="btn btn_border_red btn_red btn-project btn-comment">
+                                            Оставить отзыв
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
