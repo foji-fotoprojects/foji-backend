@@ -1,0 +1,168 @@
+.header
+  position: fixed
+  width: 100%
+  height: 73px
+  z-index: 2
+
+  &.not-main-page
+    border-bottom: 0.5px solid #000
+    background-color: #fff
+
+  &.main-page
+    border-bottom: none
+    background-color: transparent
+
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  .btn-mobile-menu
+    display: none
+
+  .btn-mobile-menu-icon
+    width: 23px
+    height: 16px
+    cursor: pointer
+    z-index: 110
+    &.not-main-page
+      fill: #000
+    &.main-page
+      fill: #fff
+
+  .mobile-menu
+    position: absolute
+    top: 0
+    left: 0
+    display: none
+    min-width: 100%
+    min-height: 100vh
+    padding: 15px
+    background-color: #fff
+    z-index: 100
+    .menu-link
+      height: 20px
+      margin-bottom: 24px
+      &.main-page
+        font-weight: 300
+        color: rgba(0, 0, 0, 0.7)
+
+  .mobile-menu-header
+    display: flex
+    justify-content: space-between
+    height: 50px
+    margin-bottom: 30px
+    .btn-mobile-menu-icon
+      fill: #000
+
+  .btn-mobile-menu-close
+      cursor: pointer
+
+  .menu
+    display: flex
+    justify-content: space-between
+    align-items: center
+    min-width: 480px
+    height: 100%
+
+  .menu-link
+    display: flex
+    align-items: center
+    height: 100%
+    font-size: 18px
+    &.not-main-page
+      font-weight: 300
+      color: rgba(0, 0, 0, 0.7)
+      &.active
+        box-shadow: inset 0 -4px 0 0 #000
+      &:hover
+        box-shadow: inset 0 -4px 0 0 #000
+        text-shadow: 0.5px 0 0 #000
+        color: #000
+    &.main-page
+      color: #fff
+      font-weight: normal
+
+  .menu-auth
+    display: flex
+    align-items: center
+    height: 100%
+
+  .menu-auth-link
+    display: flex
+    align-items: center
+    height: 100%
+    font-size: 18px
+    cursor: pointer
+    &.not-main-page
+      font-weight: 300
+      color: rgba(0, 0, 0, 0.7)
+      &:hover
+        text-shadow: 0.5px 0 0 #000
+        color: #000
+    &.main-page
+      font-weight: normal
+      color: #fff
+
+  .menu-auth-icon
+    display: none
+
+  .menu-auth-user
+    width: 19px
+    height: 19px
+    margin-right: 10px
+    &.not-main-page
+      fill: #000
+      opacity: 0.6
+    &.main-page
+      fill: #fff
+
+  .menu-auth-line
+    width: 2px
+    height: 32px
+    margin: 0 10px
+    opacity: 0.6
+    &.not-main-page
+      stroke: #000
+    &.main-page
+      stroke: #fff
+
+@media (max-width: 900px)
+  .header
+    .menu-auth-link
+      display: none
+
+    .menu-auth-line
+      display: none
+
+    .menu-auth-user
+      display: none
+
+    .menu-auth-icon
+      display: flex
+      align-items: center
+      height: 100%
+      font-size: 18px
+      font-weight: 300
+      color: rgba(0, 0, 0, 0.7)
+      &:hover
+        text-shadow: 0.5px 0 0 #000
+        color: #000
+      & > .menu-auth-user
+        display: block
+        margin-right: 0
+
+@media (max-width: 759px)
+  .header
+    height: 50px
+
+    .menu
+      display: none
+
+    .menu-link
+      &.not-main-page
+        &:hover
+          box-shadow: none
+
+    .btn-mobile-menu
+      display: block

@@ -29,7 +29,7 @@ class ProjectFilter extends Project
 
     /**
      * @param array $params
-     * @return ActiveDataProvider
+     * @return array
      */
     public function filter($params)
     {
@@ -82,7 +82,7 @@ class ProjectFilter extends Project
             : $query->andWhere(['status' => 'published',]);
 
 
-        return $dataProvider;
+        return $dataProvider->getModels();
     }
 
     public function formName()

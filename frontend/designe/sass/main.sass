@@ -1,0 +1,88 @@
+.main
+  .slider
+    height: calc(100vh - 95px)
+    max-height: 115vw
+  .advantages
+    display: flex
+    justify-content: space-between
+    padding: 60px 0 90px
+  .advantages-item
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 221px
+  .advantage-img
+    width: 70px
+    height: 70px
+  .advantage-title
+    text-align: center
+    margin-top: 20px
+    font-weight: 300
+  .projects-header
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 70px
+  .btn-filter-projects
+    cursor: pointer
+  .filter-form
+    position: absolute
+    top: -45px
+    left: -46px
+    display: none
+    width: auto
+    height: 350px
+    padding: 45px 45px 0 45px
+    background-color: #ffffff
+    border: 1px solid #000
+  .filter-form-header
+    display: flex
+    justify-content: space-between
+  .btn-filter-projects-close
+    cursor: pointer
+  .btn-new-project
+    color: #000
+  .projects-date
+    display: flex
+    align-items: center
+    margin-bottom: 70px
+  .projects-horizontal-line
+    width: 100%
+    margin-left: 15px
+    size: 1px
+    color: #000
+  .projects-preview
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+@media (max-width: 900px)
+  .main
+    .advantages-item
+      width: 150px
+    .advantage-img
+      width: 60px
+      height: 60px
+    .advantage-title
+      font-size: 16px
+
+@media (max-width: 700px)
+  .main
+    .advantages
+      flex-wrap: wrap
+    .advantages-item
+      width: 130px
+    .advantage-img
+      width: 55px
+      height: 55px
+    .advantage-title
+      font-size: 14px
+
+@media (max-width: 550px)
+  .main
+    .advantages-item
+      width: 50%
+      margin-bottom: 25px
+    .advantage-title
+      width: 130px

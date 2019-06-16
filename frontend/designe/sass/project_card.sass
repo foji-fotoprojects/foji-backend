@@ -1,0 +1,66 @@
+.project-card
+  max-width: 540px
+  padding-top: 25px
+  padding-bottom: 60px
+  border-top: 1px solid #000
+  &:hover
+    .project-btn-group
+      visibility: visible
+  .icon
+    margin-right: 15px
+  .project-card-header
+    margin-bottom: 25px
+    .city
+      font-weight: normal
+  .project-img
+    width: 100%
+  .descriptions
+    margin-top: 20px
+  .location
+    display: flex
+    align-items: center
+  .characteristics
+    display: flex
+    justify-content: space-between
+    margin-top: 15px
+  .characteristics-item
+    display: flex
+    margin-bottom: 15px
+  .characteristics-price
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+  .project-btn-group
+    display: flex
+    justify-content: space-between
+    margin-top: 15px
+    visibility: hidden
+
+@media (max-width: 1125px)
+  .project-card
+    width: 520px
+
+@media (max-width: 1085px)
+  .project-card
+    width: 500px
+
+@media (max-width: 1045px)
+  .project-card
+    width: 540px
+    margin: 0 auto
+
+@media (max-width: 900px)
+  .project-card
+    .project-btn-group
+      visibility: visible
+
+@media (max-width: 570px)
+  .project-card
+    width: 100%
+    padding-bottom: 45px
+    .project-btn-group
+      flex-wrap: wrap
+    .btn-project
+      width: 100%
+      &:first-child
+        margin-bottom: 15px
