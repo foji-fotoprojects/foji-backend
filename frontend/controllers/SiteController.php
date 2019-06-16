@@ -13,8 +13,6 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
-use yii\widgets\ActiveForm;
-use yii\web\HttpException;
 
 /**
  * Site controller
@@ -79,45 +77,30 @@ class SiteController extends Controller
         $dataProvider = $model->filter(Yii::$app->request->get());
         return $this->render('index',[
             'dataProvider' => $dataProvider,
+//            TODO обработать массив проектов во вьюхе index
         ]);
     }
 
-//    /**
-//     * Logs in a user.
-//     *
-//     * @return mixed
-//     */
-//    public function actionLogin()
-//    {
-//        if (!Yii::$app->user->isGuest) {
-//            return $this->goHome();
-//        }
-//
-//        $model = new LoginForm();
-//        if ($model->load(Yii::$app->request->post()) && $model->login()) {
-//            return $this->goBack();
-//        } else {
-//            $model->password = '';
-//
-//            return $this->render('login', [
-//                'model' => $model,
-//            ]);
-//        }
-//    }
+    /**
+     * Logs in a user.
+     *
+     * @return mixed
+     */
+    public function actionLogin()
+    {
+        if (!Yii::$app->user->isGuest) {
+            return $this->goHome();
+        }
 
-    public function actionLogin() {
-        if (Yii::$app->request->isAjax) {
-            $model = new LoginForm();
-            if ($model->load(Yii::$app->request->post())) {
-                if ($model->login()) {
-                    return $this->goBack();
-                } else {
-                    Yii::$app->response->format = yii\web\Response::FORMAT_JSON;
-                    return ActiveForm::validate($model);
-                }
-            }
+        $model = new LoginForm();
+        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+            return $this->goBack();
         } else {
-            throw new HttpException(404 ,'Page not found');
+            $model->password = '';
+
+            return $this->render('login', [
+                'model' => $model,
+            ]);
         }
     }
 

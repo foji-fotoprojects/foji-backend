@@ -1,7 +1,6 @@
 # yii console commands
 /frontend 2
 /api
-/frontend/runtime
 
 # phpstorm project files
 .idea
