@@ -1,6 +1,7 @@
 <?php
 namespace frontend\controllers;
 
+use common\models\ChangePasswordForm;
 use common\models\ProjectFilter;
 use Yii;
 use yii\base\InvalidArgumentException;
@@ -212,5 +213,17 @@ class SiteController extends Controller
         return $this->render('resetPassword', [
             'model' => $model,
         ]);
+    }
+
+    /**
+     * Смена пароля
+     */
+    public function actionChange()
+    {
+        $model = new ChangePasswordForm();
+        if ($model->load(Yii::$app->request->post()) && $model->validate() && $model->setNewPassword()){
+            Yii::$app->session->setFlash('success', 'Новый пароль сохранен');
+        }
+            throw new HttpException(300 ,'Page not found');
     }
 }

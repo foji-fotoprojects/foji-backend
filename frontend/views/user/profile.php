@@ -56,33 +56,31 @@ $this->title = 'Редактирование профиля';
 
                 <?= $form->field($profile, 'info')->label('Информация о себе (для фотографов)')->textarea(); ?>
                 <?= Html::submitButton('Сохранить',['class' => 'btn btn_red pointer']); ?>
-                <?= Html::a('Отмена', ['user/profile'], ['class' => 'btn btn_border_gray']); ?>
+                <?= Html::resetButton('Отмена', ['class' => 'btn btn_border_gray pointer']) ?>
 
             <?php ActiveForm::end() ?>
 
-        <?php Pjax::end() ?>
+<!--        --><?php //Pjax::end() ?>
 
         <h3>Сменить пароль</h3>
 
         <?php Pjax::begin(['enablePushState' => false]) ?>
 
-            <?php $form = ActiveForm::begin([
-                    'options' => ['data' => ['pjax' => true]],
-                    'action' => 'user/pwd',
-                    'id' => 'password-change-form'
-                ]);
-            ?>
+            <?= Html::beginForm('change-password', 'post', ['data' => ['pjax' => true]] ) ?>
 
-                <?= $form->field($model, 'currentPassword')->label('Введите старый пароль')->passwordInput(['maxlength' => true, 'require']) ?>
-                <?= $form->field($model, 'newPassword')->label('Введите новый пароль')->passwordInput(['maxlength' => true]) ?>
-                <?= $form->field($model, 'newPasswordRepeat')->label('Введите новый пароль еще раз')->passwordInput(['maxlength' => true]) ?>
+                <?= Html::label('Введите старый пароль', 'currentPassword') ?>
+                <?= Html::passwordInput('currentPassword', null, ['maxlength' => true]) ?>
+                <?= Html::label('Введите новый пароль', 'newPassword') ?>
+                <?= Html::passwordInput('newPassword', null, ['maxlength' => true]) ?>
+                <?= Html::label('Введите новый пароль еще раз', 'newPasswordRepeat') ?>
+                <?= Html::passwordInput('newPasswordRepeat', null, ['maxlength' => true]) ?>
 
                 <?= Html::submitButton('Сохранить',['class' => 'btn btn_red pointer']) ?>
-                <?= Html::a('Отмена', ['user/profile'], ['class' => 'btn btn_border_gray']) ?>
+                <?= Html::resetButton('Отмена', ['class' => 'btn btn_border_gray pointer']) ?>
 
-            <?php ActiveForm::end() ?>
+            <?= Html::endForm() ?>
 
-        <?php Pjax::end() ?>
+<!--        --><?php //Pjax::end() ?>
     </div>
 </main>
 

@@ -28,7 +28,7 @@ use yii\helpers\Html;
             echo $form
                 ->field($model, 'username')
                 ->label(false)
-                ->textInput(['placeholder' => 'Логин ...']);
+                ->textInput(['0' => 'Логин ...']);
 
             echo $form
                 ->field($model, 'password')
