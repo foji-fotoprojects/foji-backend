@@ -2,7 +2,6 @@
 
 namespace common\models\tables;
 
-
 use Yii;
 use common\models\tables\Project;
 use yii\db\ActiveRecord;
@@ -41,7 +40,8 @@ class Photo extends ActiveRecord
     {
         return [
             [['image', 'project_id'], 'required'],
-            [['project_id', 'active_photo', 'main_photo'], 'integer'],
+            [['project_id'], 'integer'],
+            [['active_photo', 'main_photo'], 'boolean'],
             [['created_at', 'updated_at'], 'safe'],
             [['imageFile'], 'file', 'extensions' => 'png, jpg, jpeg'],
             [['image'], 'string'],
@@ -55,22 +55,22 @@ class Photo extends ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id'           => 'ID',
-            'project_id'   => 'Project ID',
-            'image'        => 'Image',
+            'id' => 'ID',
+            'project_id' => 'Project ID',
+            'image' => 'Image',
             'active_photo' => 'Active Photo',
-            'main_photo'   => 'Main Photo',
-            'created_at'   => 'Created At',
-            'updated_at'   => 'Updated At',
+            'main_photo' => 'Main Photo',
+            'created_at' => 'Created At',
+            'updated_at' => 'Updated At',
         ];
     }
 
-     /**
+    /**
      * @return \yii\db\ActiveQuery
      */
     public function getProject()
-     {
-         return $this->hasOne(Project::className(), ['id' => 'project_id']);
+    {
+        return $this->hasOne(Project::className(), ['id' => 'project_id']);
     }
 
     /**
@@ -82,13 +82,4 @@ class Photo extends ActiveRecord
         return new \common\models\query\PhotoQuery(get_called_class());
     }
 
-    /*public function upload()
-    {
-        if ($this->validate()) {
-            $this->imageFile->saveAs('uploads/' . $this->imageFile->baseName . '.' . $this->imageFile->extension);
-            return true;
-        } else {
-            return false;
-        }
-    }*/
 }

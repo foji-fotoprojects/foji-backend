@@ -43,7 +43,7 @@ use yii\db\ActiveRecord;
  * @property int $updated_at
  * @property int $user_id
  *
- * @property hoto[] $photos
+ * @property photo[] $photos
  * @property Photographer $photographer
  * @property User $user
  * @property ProjectCalendar[] $projectCalendars

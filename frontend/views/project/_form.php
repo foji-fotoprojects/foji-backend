@@ -7,7 +7,9 @@ use yii\widgets\ActiveForm;
 /* @var $model common\models\tables\Project */
 /* @var $form yii\widgets\ActiveForm */
 /* @var $photographer array*/
-/* @var @user array*/
+/* @var $user array*/
+/* @var $status array */
+
 ?>
 
 <div class="project-form">

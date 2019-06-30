@@ -554,7 +554,7 @@
             }
         }, {
             key: "_renderHeader", value: function (e) {
-                var t = this, n = this._opts, a = n.yearRange, r = n.i18n, s = e._date, o = e.indexA, l = e.year,
+                var t = this, n = this._opts, a = n.yearRange, r = n.i18n, s = e._date, o = e.index, l = e.year,
                     h = s.getMonth();
                 return this._renderers.header(i({}, e, {
                     renderMonthSelect: function () {

@@ -1,17 +1,12 @@
 <?php
-
 namespace frontend\controllers;
-
-use common\models\tables\Project;
 use Yii;
 use common\models\tables\Photo;
 use common\models\PhotoSearch;
-use yii\helpers\ArrayHelper;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\web\UploadedFile;
-
 /**
  * PhotoController implements the CRUD actions for Photo model.
  */
@@ -31,7 +26,6 @@ class PhotoController extends Controller
             ],
         ];
     }
-
     /**
      * Lists all Photo models.
      * @return mixed
@@ -40,13 +34,11 @@ class PhotoController extends Controller
     {
         $searchModel = new PhotoSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
         return $this->render('index', [
             'searchModel'  => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
     }
-
     /**
      * Displays a single Photo model.
      * @param integer $id
@@ -59,7 +51,6 @@ class PhotoController extends Controller
             'model' => $this->findModel($id),
         ]);
     }
-
     /**
      * Creates a new Photo model.
      * If creation is successful, the browser will be redirected to the 'view' page.
@@ -68,10 +59,9 @@ class PhotoController extends Controller
     public function actionCreate()
     {
         $model = new Photo();
-
         if ($model->load(Yii::$app->request->post())) {
             $imageName=time();
-           // var_dump($_FILES); exit;
+            // var_dump($_FILES); exit;
             $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
             if (!empty($model->imageFile)){
                 $model->image = 'uploads/' . $imageName . '.' . $model->imageFile->extension;
@@ -79,16 +69,8 @@ class PhotoController extends Controller
                 $model->imageFile->saveAs('uploads/' . $imageName . '.' . $model->imageFile->extension);
             }
         }
-
-        $project = ArrayHelper::map(Project::find()->all(), 'id', 'project_id');
-
-        return $this->render('create', [
-            'model' => $model,
-            'project' => $project,
-            ]
-        );
+        return $this->render('create', ['model' => $model]);
     }
-
     /**
      * Updates an existing Photo model.
      * If update is successful, the browser will be redirected to the 'view' page.
@@ -99,7 +81,6 @@ class PhotoController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $imageName=time();
             // var_dump($_FILES); exit;
@@ -110,14 +91,10 @@ class PhotoController extends Controller
                 $model->save();
             }
         }
-
-        //$project = ArrayHelper::map(Project::find()->all(), 'id', 'project_id');
         return $this->render('update', [
             'model' => $model,
-           // 'project' => $project,
         ]);
     }
-
     /**
      * Deletes an existing Photo model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
@@ -128,10 +105,8 @@ class PhotoController extends Controller
     public function actionDelete($id)
     {
         $this->findModel($id)->delete();
-
         return $this->redirect(['index']);
     }
-
     /**
      * Finds the Photo model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
@@ -144,7 +119,6 @@ class PhotoController extends Controller
         if (($model = Photo::findOne($id)) !== null) {
             return $model;
         }
-
         throw new NotFoundHttpException('The requested page does not exist.');
     }
 }

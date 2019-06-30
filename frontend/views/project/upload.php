@@ -3,7 +3,8 @@
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
 /**@var yii\widgets\ActiveForm $form; */
-/* @var $model \common\models\tables\UploadPhoto */
+/* @var $model \common\models\tables\Photo */
+/* @var $project array */
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
@@ -23,7 +24,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
             <?php $form = ActiveForm::begin(); ?>
 
-            <?= $form->field($model, 'image')->fileInput() ?>
+            <?= $form->field($model, 'imageFile')->fileInput() ?>
+
+            <?= $form->field($model, 'project_id')->dropDownList($project)->label('project_id') ?>
 
             <?= $form->field($model, 'active_photo')->textInput() ?>
 
