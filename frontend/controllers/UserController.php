@@ -10,6 +10,7 @@ use yii\base\ErrorException;
 use yii\web\Controller;
 use yii\web\HttpException;
 use yii\web\NotFoundHttpException;
+use yii\web\UploadedFile;
 
 
 class UserController extends Controller
@@ -58,16 +59,42 @@ class UserController extends Controller
     }
 
     /**
+     * Загрузка аватра
+     * @return mixed
+     */
+    public function actionChangeAvatar()
+    {
+        $model = new UserProfile();
+        if ($model->load(Yii::$app->request->post())) {
+            // var_dump($_FILES); exit;
+            $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
+            $fileName = strtolower(md5(uniqid($model->imageFile->baseName)) . '.' . $model->imageFile->extension);
+            //var_dump(strtolower(md5(uniqid($model->imageFile->baseName)) . '.' . $model->imageFile->extension)); die;
+            if (!empty($model->imageFile)){
+                $model->avatar_url = $fileName;
+                $model->save();
+                $model->imageFile->saveAs('/images/user/avatar/' . $fileName);
+            }
+        }
+    }
+
+    /**
      * Сохранение профиля
      */
     public function actionUpdate()
     {
-        $profile = UserProfile::findOne(['user_id' => Yii::$app->user->identity->getId()]);
+        $model = UserProfile::findOne(['user_id' => Yii::$app->user->identity->getId()]);
 
-        if ($profile->load(Yii::$app->request->post()) && $profile->save()) {
-            Yii::$app->session->setFlash('success', 'Профиль сохранен');
+        if ($model->load(Yii::$app->request->post())) {
+            $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
+            $fileName = strtolower(md5(uniqid($model->imageFile->baseName)) . '.' . $model->imageFile->extension);
+            $model->avatar_url = $fileName;
+
+            if ($model->validate() && $model->save() && $model->imageFile->saveAs('/images/user/avatar/' . $fileName)) {
+                return 'done';
+//                Yii::$app->session->setFlash('success', 'Профиль сохранен');
+            }
         }
-
         throw new NotFoundHttpException('Ошибка, попробуйте еще раз.');
     }
 

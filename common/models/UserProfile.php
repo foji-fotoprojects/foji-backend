@@ -26,6 +26,8 @@ use yii\behaviors\TimestampBehavior;
  */
 class UserProfile extends \yii\db\ActiveRecord
 {
+    public $imageFile;
+
     /**
      * {@inheritdoc}
      */
@@ -53,6 +55,7 @@ class UserProfile extends \yii\db\ActiveRecord
             [['created_at', 'updated_at'], 'safe'],
             [['firstName', 'lastName', 'city', 'phone'], 'string', 'max' => 20],
             [['avatar_url'], 'string', 'max' => 255],
+            [['imageFile'], 'file', 'extensions' => 'png, jpg, jpeg'],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
     }

@@ -19,32 +19,34 @@ $this->title = 'Редактирование профиля';
             <a href="/user" class="text">< Личный кабинет</a>
         </div>
         <h2>Редактирование профиля</h2>
-        <div class="avatar">
-            <?php if ($profile['avatar_url']) {
-                $avatar = $profile['avatar_url'];
-            } else
-                switch ($profile['sex']){
-                    case 0: // женщина
-                        $avatar = 'avatar_female.svg';
-                        break;
-                    case 1: // мужчина
-                        $avatar = 'avatar_male.svg';
-                        break;
-                    default:
-                        $avatar = 'dog.svg';
-                } ?>
-            <?= Html::img("@web/images/user/$avatar",['alt' => 'Аватар']) ?>
-        </div>
+<!--        --><?php //Pjax::begin(['enablePushState' => false]); ?>
+            <div class="avatar">
+                <?php if ($profile['avatar_url']) {
+                    $avatar = $profile['avatar_url'];
+                } else
+                    switch ($profile['sex']){
+                        case 0: // женщина
+                            $avatar = 'avatar_female.svg';
+                            break;
+                        case 1: // мужчина
+                            $avatar = 'avatar_male.svg';
+                            break;
+                        default:
+                            $avatar = 'dog.svg';
+                    } ?>
+                <?= Html::img("@web/images/user/avatar/$avatar",['alt' => 'Аватар']) ?>
+            </div>
 
-        <a class="btn btn_border_gray" href="#">Выбрать фото</a>
-
-        <?php Pjax::begin(['enablePushState' => false]); ?>
-
-            <?php $form = ActiveForm::begin([
+                <?php $form = ActiveForm::begin([
                     'options' => ['data' => ['pjax' => true]],
                     'action' => ['user/update']
                 ]);
-            ?>
+                ?>
+                    <?= $form->field($profile, 'avatar_url')
+                        ->label('Выбрать фото', ['class' => 'btn btn_border_gray pointer'])
+                        ->fileInput()
+                    ?>
+
                 <?= $form->field($profile, 'firstName')->label('Имя')->textInput(); ?>
                 <?= $form->field($profile, 'lastName')->label('Фамилия')->textInput(); ?>
                 <?= $form->field($profile, 'sex')->label('Пол')->radioList(['Женский', 'Мужской']); ?>
@@ -64,7 +66,7 @@ $this->title = 'Редактирование профиля';
 
         <h3>Сменить пароль</h3>
 
-        <?php Pjax::begin(['enablePushState' => false]) ?>
+<!--        --><?php //Pjax::begin(['enablePushState' => false]) ?>
 
             <?= Html::beginForm('change-password', 'post', ['data' => ['pjax' => true]] ) ?>
 
