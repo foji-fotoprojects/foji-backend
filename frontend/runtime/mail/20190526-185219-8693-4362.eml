@@ -1,0 +1,52 @@
+Message-ID: <e05ca1f4f44fe90327b0e889f562eccc@front.foji>
+Date: Sun, 26 May 2019 18:52:19 +0300
+Subject: Email confirmation for My Application
+From: My Application <info@site.com>
+To: a.mel@list.ru
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_1558885939_f0dc0fe0cc0da09507d8081e5adde729_=_"
+
+
+--_=_swift_1558885939_f0dc0fe0cc0da09507d8081e5adde729_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello! ?>,
+
+Follow the link below to confirm your email:
+
+http://fr=
+ont.foji/user/default/email-confirm?token=3DOdT69C7GbLU4fw9bVnFA7Kn5qM3_GNp=
+Y
+
+If you have not registered on our website, then simply delete this e=
+mail.
+
+--_=_swift_1558885939_f0dc0fe0cc0da09507d8081e5adde729_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+" />
+    <title></title>
+    </head>
+<body>
+            <p>Hello! ?>,</p>
+
+    <p>Follow the link below to confirm your email:</p>
+
+    <p><a href=3D"http://front.foji/user/default/email-confirm?token=3DOdT6=
+9C7GbLU4fw9bVnFA7Kn5qM3_GNpY">http://front.foji/user/default/email-confirm?=
+token=3DOdT69C7GbLU4fw9bVnFA7Kn5qM3_GNpY</a></p>
+
+<p>If you have not registered on our website, then simply delete this email=
+.</p>    </body>
+</html>
+
+
+--_=_swift_1558885939_f0dc0fe0cc0da09507d8081e5adde729_=_--

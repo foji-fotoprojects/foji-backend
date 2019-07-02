@@ -2,6 +2,7 @@
 
 namespace common\tests\unit\models;
 
+use http\Client\Curl\User;
 use Yii;
 use common\models\LoginForm;
 use common\fixtures\UserFixture;

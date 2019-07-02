@@ -27,7 +27,8 @@
         "codeception/base": "^2.4.0",
         "phpunit/phpunit": "~6.5.5",
         "codeception/verify": "~1.0.0",
-        "guzzlehttp/guzzle": "^6.3@dev"
+        "guzzlehttp/guzzle": "^6.3@dev",
+        "codeception/codeception": "3.0.x-dev"
     },
     "config": {
         "process-timeout": 1800,

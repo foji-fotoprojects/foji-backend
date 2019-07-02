@@ -1,5 +1,12 @@
+@keyframes slide
+  0%
+    transform: translateX(0)
+  100%
+    transform: translateX(-100%)
+
 .project
   padding-top: 73px
+  font-weight: 300
   .breadcrumbs
     margin: 35px 0
     a
@@ -15,16 +22,26 @@
     width: 100%
   .project-header
     margin-bottom: 30px
+    position: relative
     .city
       font-weight: normal
+    .stars
+      position: absolute
+      top: 0
+      right: 0
   .project-content
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
+
   .project-main-information
     width: 540px
-  .project-image
-    width: 540px
-    height: 360px
+  .project-slider
+    width: 100%
+    .project-image-placeholder
+      max-width: 100%
+      max-height: 360px
+      opacity: 0
   .project-tabs
     margin-bottom: 20px
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.7)
@@ -36,13 +53,13 @@
       list-style: none
       margin-bottom: 20px
       border-bottom: 0.5px solid rgba(0, 0, 0, 0.7)
-      &>li:not(:last-child)
+      & > li:not(:last-child)
         margin-right: 25px
     .tabs-item
       padding-bottom: 10px
       cursor: pointer
       &.active
-        box-shadow: inset 0 -4px 0 0 #FF4546
+        border-bottom: 4px solid #FF4546
         color: #000
     .tabs-panel
       display: none
@@ -131,3 +148,309 @@
   .project-map
     width: 100%
     height: 215px
+
+.project-slider
+  overflow: hidden
+  position: relative
+
+.project-main-slide
+  width: 100%
+  height: 100%
+  top: 0
+  object-fit: contain
+  background: white
+  position: absolute
+
+.project-slide-prev
+  left: 0
+  z-index: 0
+  padding: 1px
+
+.project-slide-current
+  left: 100%
+  animation: slide 0.5s forwards
+  z-index: 1
+  width: 100%
+
+.project-preview-wrapper
+  margin-top: 20px
+  height: 115px
+  overflow: hidden
+  position: relative
+
+.project-preview-block
+  height: 100%
+  display: flex
+  align-items: center
+  transition-duration: 0.5s
+
+  .preview
+    max-width: 100px
+    max-height: 100px
+    padding: 5px
+    box-sizing: content-box
+    margin: 5px
+    opacity: 0.5
+    border: transparent 1px solid
+
+  .preview-current
+    border: black 1px solid
+    opacity: 1
+
+.project-sharing
+  display: flex
+  margin-top: 25px
+  align-items: center
+
+.project-sharing-text
+  margin-right: 20px
+
+.project-map-link
+  position: relative
+  a
+    color: black
+    text-decoration: underline
+    position: absolute
+    right: 0
+    top: -5px
+
+.ya-share2__icon
+  background-color: black !important
+
+.mobile
+  display: none !important
+
+.how-to-reach
+  font-weight: normal
+  font-size: 15px
+  line-height: 18px
+  margin: 20px 0 10px
+  box-sizing: border-box
+
+.back
+  display: none
+
+.shown
+  display: block !important
+
+@media (max-width: 1100px)
+  .project .arrow-left, .project .arrow-right
+    display: none
+
+  .project .project-content
+    display: flex
+    justify-content: space-around
+
+@media (max-width: 970px)
+  .project .project-main-information
+    width: 55%
+
+  .project .project-sub-information
+    width: 40%
+
+  .project .breadcrumbs
+    margin: 5px 0 20px 0
+
+@media (min-width: 531px)
+  .how-to-reach
+    cursor: pointer
+  .how-to-reach-text
+    display: none
+    position: absolute
+    padding: 15px 15px 5%
+    bottom: -355px
+    margin-right: 23px
+    p
+      position: relative
+      z-index: 2
+    .back
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      z-index: 1
+      display: block
+
+.comment-header
+  height: 40px
+  img
+    float: left
+    margin-right: 20px
+  .name
+    font-weight: normal
+    font-size: 15px
+    line-height: 18px
+
+.comment
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.2)
+  margin-bottom: 20px
+
+  p
+    width: 100%
+    margin: 10px 0 20px
+
+.comment:nth-last-child(1), .comment:nth-last-child(2)
+  border-bottom: none
+
+.btn-comment
+  width: 200px !important
+
+@media (max-width: 530px)
+  .project .project-main-information, .project .project-sub-information
+    width: 100%
+    min-width: 100%
+  .desktop
+    display: none !important
+  .mobile
+    display: flex !important
+  .project-preview-wrapper
+    margin-bottom: 30px
+  .project .project-location
+    margin-top: 0
+    border: none
+    padding-top: 0
+    position: relative
+  .tabs-container
+    margin-top: 20px !important
+  .project-photographer.mobile, .project-tabs.mobile
+    display: block !important
+    border: none !important
+
+.hasLefts
+  height: 100%
+  width: 20px
+  background: #F4F4F4
+  position: absolute
+  left: 0
+  top: 0
+  content: '<'
+  font-size: 200%
+  display: none
+  justify-content: center
+  align-items: center
+  opacity: 0.5
+
+.hasRights
+  height: 100%
+  width: 20px
+  background: #e9e9e9
+  position: absolute
+  right: 0
+  top: 0
+  content: '>'
+  font-size: 200%
+  display: none
+  justify-content: center
+  align-items: center
+  opacity: 0.5
+
+.project-status-block
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+  .fa
+    margin-right: 5px
+
+  .btn-project
+    display: none
+
+  .project-request-sent
+    display: none
+
+    min-width: 50%
+
+    font-weight: normal
+    font-size: 15px
+    line-height: 21px
+
+    color: #FF4546
+
+  .project-cancel
+    display: none
+
+    width: fit-content
+
+    font-weight: normal
+    font-size: 15px
+    line-height: 21px
+    text-decoration-line: underline
+
+    color: #C4C4C4
+
+  .project-manager
+    display: none
+
+    margin-top: 10px
+
+    font-weight: normal
+    font-size: 15px
+    line-height: 18px
+    color: #000000
+
+  .project-btn-message
+    display: none
+
+    width: 160px
+    height: 30px
+    margin-top: 15px
+
+    border: 1px solid #FF4546
+
+  .project-finished
+    display: none
+    align-content: center
+    justify-content: center
+    width: 100%
+
+    font-weight: normal
+    font-size: 15px
+    line-height: 21px
+
+  .project-responses
+    display: none
+    justify-content: center
+    width: 100%
+
+
+    .project-old-responses
+      align-content: center
+      justify-content: center
+
+      font-weight: bold
+      font-size: 20px
+      line-height: 23px
+      text-decoration: underline
+
+    .project-new-responses
+      font-weight: bold
+      font-size: 13px
+      line-height: 15px
+      text-align: center
+      text-transform: uppercase
+      text-decoration: none !important
+
+      color: #FF4546
+
+.project-status-block.active
+  .btn-project
+    display: flex
+
+
+.project-status-block.joined
+  .project-request-sent, .project-cancel, .project-manager
+    display: block
+  .project-btn-message
+    display: flex
+
+.project-status-block.finished
+  .project-finished
+    display: flex
+
+.project-status-block.responses
+  .project-responses
+    display: flex
+
+.project-map
+  filter: grayscale(1)

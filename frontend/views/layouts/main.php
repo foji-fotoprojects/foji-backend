@@ -1,15 +1,11 @@
 <?php
-
 use yii\helpers\Html;
 use frontend\assets\AppAsset;
 use frontend\widgets\LoginFormWidget;
 use frontend\widgets\UserDataWidget;
-
 AppAsset::register($this);
-
 /* @var $this yii\web\View */
 /* @var $content string */
-
 ?>
 
 <?php $this->beginPage() ?>

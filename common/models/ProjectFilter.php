@@ -3,8 +3,6 @@
 
 namespace common\models;
 
-
-
 use yii\data\ActiveDataProvider;
 use yii\validators\Validator;
 

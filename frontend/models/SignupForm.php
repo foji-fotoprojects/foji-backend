@@ -1,5 +1,6 @@
 <?php
 namespace frontend\models;
+
 use Yii;
 use yii\base\Model;
 use common\models\User;
@@ -16,7 +17,7 @@ class SignupForm extends Model
     public function rules()
     {
         return [
-            ['email', 'trim'],
+        ['email', 'trim'],
             [['email','password'], 'required'],
             ['email', 'email'],
             ['email', 'string', 'max' => 50],
