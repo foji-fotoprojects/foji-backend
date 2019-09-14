@@ -10,6 +10,8 @@ use yii\helpers\Html;
 use yii\widgets\Pjax;
 use yii\widgets\ActiveForm;
 
+$this->registerJsFile('/js/cropper.min.js', ['depends' => \yii\web\JqueryAsset::className()]);
+$this->registerCssFile('/css/cropper.min.css');
 $this->title = 'Редактирование профиля';
 ?>
 
@@ -20,7 +22,7 @@ $this->title = 'Редактирование профиля';
         </div>
         <h2>Редактирование профиля</h2>
 <!--        --><?php //Pjax::begin(['enablePushState' => false]); ?>
-            <div class="avatar">
+            <div id="profile-avatar">
                 <?php if ($profile['avatar_url']) {
                     $avatar = $profile['avatar_url'];
                 } else
@@ -34,18 +36,75 @@ $this->title = 'Редактирование профиля';
                         default:
                             $avatar = 'dog.svg';
                     } ?>
-                <?= Html::img("@web/images/user/avatar/$avatar",['alt' => 'Аватар']) ?>
+                <?= Html::img("@web/images/user/avatar/$avatar",['alt' => 'Аватар', 'id' => 'img_avatar']) ?>
             </div>
+
+            <input type="file" id="upload-btn" name="files[]" class="btn btn_border_gray pointer">Выбрать фото</input>
+
+        <script>
+            function handleFileSelect(evt) {
+                var files = evt.target.files; // FileList object
+
+                // Loop through the FileList and render image files as thumbnails.
+                for (var i = 0, f; f = files[i]; i++) {
+
+                    // Only process image files.
+                    if (!f.type.match('image.*')) {
+                        continue;
+                    }
+
+                    var reader = new FileReader();
+
+                    // Closure to capture the file information.
+                    reader.onload = (function(theFile) {
+                        return function(e) {
+                            // Render thumbnail.
+                            var span = document.createElement('span');
+                            span.innerHTML = ['<img class="thumb" src="', e.target.result,
+                                '" title="', escape(theFile.name), '"/>'].join('');
+                            document.getElementById('profile-avatar').insertBefore(span, null);
+                        };
+                    })(f);
+
+                    // Read in the image file as a data URL.
+                    reader.readAsDataURL(f);
+                }
+            }
+
+            document.getElementById('upload-btn').addEventListener('change', handleFileSelect, false);
+        </script>
+
+<!--        <script>-->
+<!--            function handleFileSelect(evt) {-->
+<!--                var file = evt.target.file; // FileList object-->
+<!--                if (file.type.match('image.*')) {-->
+<!--                    var reader = new FileReader();-->
+<!--                        reader.onload = (function(theFile) {-->
+<!--                            return function(e) {-->
+<!--                                // Render thumbnail.-->
+<!--                            var span = document.createElement('span');-->
+<!--                            span.innerHTML = ['<img class="thumb" src="', e.target.result,-->
+<!--                                '" title="', escape(theFile.name), '"/>'].join('');-->
+<!--                            document.getElementById('profile-avatar').insertBefore(span, null);-->
+<!--                        };-->
+<!--                        })(file);-->
+<!---->
+<!--                        // Read in the image file as a data URL.-->
+<!--                        reader.readAsDataURL(file);-->
+<!--                    }-->
+<!--                }-->
+<!--            document.getElementById('files').addEventListener('change', handleFileSelect, false);-->
+<!--        </script>-->
 
                 <?php $form = ActiveForm::begin([
                     'options' => ['data' => ['pjax' => true]],
                     'action' => ['user/update']
                 ]);
                 ?>
-                    <?= $form->field($profile, 'avatar_url')
-                        ->label('Выбрать фото', ['class' => 'btn btn_border_gray pointer'])
-                        ->fileInput()
-                    ?>
+<!--                    --><?//= $form->field($profile, 'imageFile')
+//                        ->label('Выбрать фото', ['id' => 'cropic-upload-btn', 'class' => 'btn btn_border_gray pointer'])
+//                        ->fileInput();
+//                    ?>
 
                 <?= $form->field($profile, 'firstName')->label('Имя')->textInput(); ?>
                 <?= $form->field($profile, 'lastName')->label('Фамилия')->textInput(); ?>
@@ -64,6 +123,7 @@ $this->title = 'Редактирование профиля';
 
 <!--        --><?php //Pjax::end() ?>
 
+        
         <h3>Сменить пароль</h3>
 
 <!--        --><?php //Pjax::begin(['enablePushState' => false]) ?>

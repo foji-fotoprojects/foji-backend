@@ -64,16 +64,20 @@ class UserController extends Controller
      */
     public function actionChangeAvatar()
     {
-        $model = new UserProfile();
+        $model = UserProfile::findOne(['user_id' => Yii::$app->user->identity->getId()]);
+
         if ($model->load(Yii::$app->request->post())) {
-            // var_dump($_FILES); exit;
             $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
-            $fileName = strtolower(md5(uniqid($model->imageFile->baseName)) . '.' . $model->imageFile->extension);
-            //var_dump(strtolower(md5(uniqid($model->imageFile->baseName)) . '.' . $model->imageFile->extension)); die;
-            if (!empty($model->imageFile)){
-                $model->avatar_url = $fileName;
-                $model->save();
-                $model->imageFile->saveAs('/images/user/avatar/' . $fileName);
+            $fileName = strtolower(md5(Yii::$app->user->getId()) . '.' . $model->imageFile->extension);
+            $model->avatar_url = $fileName;
+
+            if ($model->validate() && $model->save() && $model->imageFile->saveAs('images/user/avatar/' . $fileName)) {
+                return \GuzzleHttp\json_encode([
+                    "status" => "success",
+                    "url" => "images/user/avatar/' . $fileName",
+//				"width" => originalImgWidth,
+//				"height" => originalImgHeight
+                ]);
             }
         }
     }
@@ -87,12 +91,14 @@ class UserController extends Controller
 
         if ($model->load(Yii::$app->request->post())) {
             $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
-            $fileName = strtolower(md5(uniqid($model->imageFile->baseName)) . '.' . $model->imageFile->extension);
+            $fileName = strtolower(md5(Yii::$app->user->getId()) . '.' . $model->imageFile->extension);
             $model->avatar_url = $fileName;
 
-            if ($model->validate() && $model->save() && $model->imageFile->saveAs('/images/user/avatar/' . $fileName)) {
-                return 'done';
-//                Yii::$app->session->setFlash('success', 'Профиль сохранен');
+            if ($model->validate() && $model->save() && $model->imageFile->saveAs('images/user/avatar/' . $fileName)) {
+                Yii::$app->session->setFlash('success', 'Профиль сохранен');
+                return $this->render('profile', [
+                    'profile' => Yii::$app->user->identity->userProfile,
+                ]);
             }
         }
         throw new NotFoundHttpException('Ошибка, попробуйте еще раз.');
