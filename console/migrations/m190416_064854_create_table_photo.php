@@ -12,15 +12,19 @@ class m190416_064854_create_table_photo extends Migration
      */
     public function safeUp()
     {
-          $this->createTable('photo', [
+        $tableOptions = null;
+        if ($this->db->driverName === 'mysql') {
+            $tableOptions = 'CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB';
+        }
+
+        $this->createTable('photo', [
             'id' => $this->primaryKey(),
             'project_id' => $this->integer()->notNull(),
             'image' => $this->string()->notNull(),
             'active_photo' => $this->integer(),
             'main_photo' => $this->integer(),
             'created_at' => $this->date(),
-
-        ] );
+        ], $tableOptions);
 
         $this->createIndex('idx-project_id-id_project-_id', 'photo', 'project_id');
 

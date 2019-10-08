@@ -12,6 +12,11 @@ class m190320_194612_create_table_user_profile extends Migration
      */
     public function safeUp()
     {
+        $tableOptions = null;
+        if ($this->db->driverName === 'mysql') {
+            $tableOptions = 'CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB';
+        }
+
         $this->createTable('user_profile', [
             'id' => $this->primaryKey(),
             'firstName' => $this->string(20),
@@ -26,7 +31,7 @@ class m190320_194612_create_table_user_profile extends Migration
             'created_at' => $this->integer()->notNull(),
             'updated_at' => $this->integer()->notNull(),
             'user_id' => $this->integer()->notNull(),
-        ]);
+        ], $tableOptions);
 
         $this->createIndex(
             'idx-user_profile-user_id-user-id',
