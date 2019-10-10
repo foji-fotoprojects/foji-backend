@@ -12,6 +12,11 @@ class m190316_121933_create_table_appointments_calendar extends Migration
      */
     public function safeUp()
     {
+        $tableOptions = null;
+        if ($this->db->driverName === 'mysql') {
+            $tableOptions = 'CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB';
+        }
+
         $this->createTable('project_calendar', [
             'id' => $this->primaryKey(),
             'date_time' => $this->dateTime(),
@@ -22,7 +27,7 @@ class m190316_121933_create_table_appointments_calendar extends Migration
             'created_at' => $this->integer(),
             'updated_at' => $this->integer(),
             'project_id' => $this->integer()->notNull(),
-        ]);
+        ], $tableOptions);
 
         $this->createIndex(
             'idx-user-id__project_calendar-model_id',
