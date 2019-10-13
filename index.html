@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>FOJI</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css">    
+</head>
+
+<body> 
+    
+    <section class='title-section'>
+        <h1 class='title-section__title'>Личный кабинет</h1>
+        <div class='title-section__edit'>
+            <p class='edit-text'>Редактировать профиль</p>
+        </div>
+    </section>
+    
+    <section class='subTitle-section'>
+        <h2 class='subTitle-section__title'>Фотопроекты, в которых я участвую</h2>
+        <div class='subTitle-section__org'>
+            <p class='org-text'>В кабинет организатора</p>
+        </div>
+    </section>
+    
+    
+<!--  КАРТОЧКА ПРОЕКТА  -->
+    <section class='project-section'>
+        <img class='project-section__img' src='images/card-section.jpg'/>
+        
+        <div class='project-section__body'>
+            <div class='body-about'>
+                <p class='body-about__tags'>Для пар</p>
+                <div class='body-about__pin'></div>
+                <p class='body-about__tags'>На природе</p>
+            </div>
+            <p class='body-about__title'>Зимняя Love Story</p>
+            <div class='body-location'>
+                <div class='location__city'>
+                    <p class='city__word'>Город: </p>
+                    <p class='city__name'>Москва</p>
+                </div>
+                <div class='location__address'>
+                    <div class='location__img tagImg'></div>
+                    <p class='address'>
+                        м. Речной вокзал, ул. Фестивальная, д.2, к.3, кв.61
+                    </p>
+                </div>
+            </div>
+            <div class='body-information'>
+                <div class='information1'>
+                    <div class='information__data'>
+                        <div class='data__img tagImg'></div>
+                        <p class='data__text'>02.02.2019</p>
+                    </div>
+                    <div class='information__sum'>
+                        <div class='sum__img tagImg'></div>
+                        <p class='sum__text'>10 шт.</p>
+                    </div>
+                </div>
+                <div class='information2'>
+                    <div class='information__time'>
+                        <div class='time__img tagImg'></div>
+                        <p class='time__text'>9:00-10:00</p>
+                    </div>
+                    <div class='information__hours'>
+                        <div class='hours__img tagImg'></div>
+                        <p class='hours__text'>1 час</p>
+                    </div>
+                </div>
+                <div class='information3'>
+                    <div class='information__money'>
+                        <p class='price'>5 000 р.</p>
+                    </div>
+                    <div class='information__undo-price'>
+                        <p class='undo-price__text'>Предоплата:</p>
+                        <p class='undo-price__price'>2 500 р.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class='project-section__buttons'>
+            <div class='buttons-request'>
+                <div class='buttons-request__status'>
+                    <div class='status-check'></div>
+                    <div class='status-text'>
+                        <p class='status-text__undone'>Заявка отправлена</p>
+                        <p class='status-text__done hidden'>Проект завершен</p>
+                        <p class='status-text__checked hidden'>Заявка подтверждена</p>
+                        <p class='status-text__notChecked hidden'>Заявка отклонена</p>
+                        <p class='status-text__cancel'>(Отменить)</p>
+                    </div>
+                    <button class='button-request hidden'>Записаться</button>
+                    <button class='button-message'>Написать организатору</button>
+                    <button class='button-review hidden'>Оставить отзыв</button>
+                    <button class='button-moreReview hidden'>Дополнить отзыв</button>
+                    <button class='button-about'>Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class='cancel-section'>
+        <h2 class='cancel-section__title'>Отмененные</h2>
+        <div class='cancel-section__line'>
+            <div class='grayLine'></div>
+        </div>
+    </section>
+    
+    <script src="custom.js"></script>
+</body>
+</html>
