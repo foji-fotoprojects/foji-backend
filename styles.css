@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
 html {
     height: 1vh;
     font-size: 1vw;
@@ -6,6 +8,8 @@ html {
 body {
     width: 80%;
     margin: auto;
+    
+    font-family: Roboto Condensed;
 }
 
 .title-section {
@@ -17,6 +21,20 @@ body {
 .title-section__edit {
     margin-left: 50px;
     opacity: .5;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    cursor: pointer;
+}
+
+.title-section__edit svg {
+    height: 2rem;
+}
+
+.edit-text {
+    margin-left: 5px;
 }
 
 .subTitle-section {
@@ -24,6 +42,16 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.subTitle-section__org-cab {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.subTitle-section__org-cab svg {
+    height: 2rem;
 }
 
 .project-section {
@@ -34,8 +62,8 @@ body {
 }
 
 .project-section__img {
-    width: 255px;
-    height: 170px;
+    width: auto;
+    height: 15rem;
 }
 
 .project-section__body {
@@ -45,27 +73,53 @@ body {
 }
 
 .project-section__buttons {
-    width: 20%
+    width: 30%
 }
 
 .body-about {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 20%;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.body-about svg {
+    margin: auto 5px;
+    height: 2rem;
 }
 
 .location__city {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 15%;
+    justify-content: flex-start;
+    width: 20%;
+}
+
+.city__word {
+    margin-right: 5px;
 }
 
 .body-information {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+}
+
+.body-information svg {
+    height: 2rem;
+}
+
+.information2 {
+    margin-left: 3.5rem;
+}
+
+.information3 {
+    margin-left: 10rem;
+}
+
+.information__money {
+    font-weight: bold;
 }
 
 .body-about__title {
@@ -77,10 +131,25 @@ body {
 }
 
 .body-location {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+}
+
+.location__address {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    width: 100%;
+    
+    margin-left: 4rem;
+}
+
+.location__address svg {
+    height: 2rem;
+    margin-right: 5px;
 }
 
 h1 {
@@ -119,7 +188,7 @@ h2 {
     color: #4D4D4D;
 }
 
-.cancel-section {
+#cancel-section {
     display: flex;
     flex-direction: row;
 }
@@ -165,8 +234,7 @@ h2 {
     font-family: Roboto Condensed;
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
-    line-height: 18px;
+/*    font-size: 15px;*/
     color: #000000;
 }
 
@@ -174,7 +242,7 @@ h2 {
     font-family: Roboto Condensed;
     font-style: normal;
     font-weight: 300;
-    font-size: 15px;
+/*    font-size: 15px;*/
     line-height: 21px;
     color: rgba(0, 0, 0, 0.8);
 }
@@ -203,12 +271,25 @@ h2 {
     font-size: 32px;
     fill: Solid;
     color: #000000;
-    margin-top: 0px;
+    margin-top: .25rem;
     margin-bottom: 20px;
 }
 
 .information__time, .information__data {
     margin-top: 0px;
+}
+
+.information__data, .information__sum, .information__time, .information__hours {
+    display: flex;
+    flex-direction: row;
+}
+
+.data__img, .sum__img, .time__img, .hours__img {
+    margin: auto 10px auto 0;
+}
+
+.information__undo-price {
+    margin: auto;
 }
 
 .hidden {
@@ -218,14 +299,31 @@ h2 {
 .status-text {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 90%;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
     margin-bottom: 20px;
+}
+
+.status-text svg {
+    height: 2rem;
+    margin-right: 5px;
+}
+
+.status-text__cancel {
+    margin-left: 5px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.status-text__undone {
+    color: #FF4546;
 }
 
 button {
     margin: 15px 0px 15px 0px;
-    height: 2.5rem;
+    height: 3.5rem;
+    font-size: 1rem;
     border: 2px solid #FF4546;
     background: white;
     color: #FF4546;
@@ -246,3 +344,4 @@ button:hover {
     display: flex;
     flex-direction: column
 }
+
