@@ -3,8 +3,6 @@
 
 namespace frontend\widgets;
 
-
-use common\models\UserProfile;
 use Yii;
 use yii\base\Widget;
 
@@ -12,13 +10,20 @@ class UserDataWidget extends Widget
 {
     public function run()
     {
-        $userProfile = UserProfile::findOne(['user_id' => Yii::$app->user->id]);
+        $profile = Yii::$app->user->identity->userProfile;
 
-        return $this->render('userDataWidget', [
-            'firstName' => $userProfile['firstName'],
-            'lastName' => $userProfile['lastName'],
-            'avatar_url' => $userProfile['avatar_url'],
-//            'userProfile' => $userProfile,
-        ]);
+        if ($profile['firstName'] || $profile['lastName']) {
+            return $this->render('userDataWidget', [
+                'firstName' => $profile['firstName'],
+                'lastName' => $profile['lastName'],
+                'avatar_url' => $profile['avatar_url'],
+            ]);
+        } else {
+            return $this->render('userDataWidget', [
+                'firstName' => Yii::$app->user->identity->email,
+                'lastName' => '',
+                'avatar_url' => $profile['avatar_url'],
+            ]);
+        }
     }
 }

@@ -86,7 +86,10 @@ a {
   height: 100%; }
 
 .content {
-  flex: 1 0 auto; }
+  flex: 1 0 autodd; }
+
+.pointer {
+  cursor: pointer; }
 
 .btn {
   display: flex;
@@ -110,6 +113,10 @@ a {
 .btn_red {
   background-color: #FF4546;
   color: #fff; }
+
+.btn_border_gray {
+  border-color: #747474;
+  color: #747474; }
 
 .project-card {
   max-width: 540px;
@@ -1169,11 +1176,18 @@ a.datepicker__prev, a.datepicker__next {
   color: black;
   width: 15px; }
 
+.profile #profile-avatar {
+  width: 255px;
+  height: 255px;
+  background: #C4C4C4;
+  display: flex; }
+  .profile #profile-avatar img {
+    margin: 0 auto;
+    max-width: 255px; }
+
 @media (max-width: 1139px) {
   .container {
     width: 100%; } }
 @media (max-width: 759px) {
   .container {
     width: 100%; } }
-
-/*# sourceMappingURL=style.css.map */

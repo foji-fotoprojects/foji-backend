@@ -43,7 +43,7 @@ return [
             'showScriptName' => false,
             'rules' => [
 //                '<action:\w+-?\w+>' => 'site/<action>'
-                '<controller:\w+>/<action:\w+>/' => '<controller>/<action>',
+                '<controller:\w+>/<action:\w+-?\w+>/' => '<controller>/<action>',
             ],
         ],
 
