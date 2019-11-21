@@ -29,10 +29,10 @@ class ChangePasswordForm extends Model
     public function rules()
     {
         return [
-            [['currentPassword', 'newPassword', 'newPasswordRepeat'], 'required'],
-            ['currentPassword', 'validatePassword'],
-            [['newPassword', 'newPasswordRepeat'], 'string', 'min' => 6],
-            [['newPassword'], 'compare', 'compareAttribute' => 'newPasswordRepeat', 'message' => 'Пароли не совпадают'],
+            [['currentPassword', 'newPassword', 'newPasswordRepeat'], 'required', 'message' => 'Необходимо заполнить'],
+            ['currentPassword', 'validatePassword', 'message' => 'Неверный пароль'],
+            [['newPassword', 'newPasswordRepeat'], 'string', 'min' => 6, 'message' => 'Минимум 6 символов'],
+            ['newPassword', 'compare', 'compareAttribute' => 'newPasswordRepeat', 'message' => 'Пароли не совпадают'],
         ];
     }
 
@@ -62,5 +62,4 @@ class ChangePasswordForm extends Model
             return false;
         }
     }
-
 }
