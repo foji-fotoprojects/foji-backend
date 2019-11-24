@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>LocalStorage ToDoList</title>
+        <link rel='stylesheet' href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <div class='card-header-info'>
+            <div class='title'>
+                <p>Личный кабинет</p>
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.5">
+                    <path d="M13.7054 9.54216V15.7897H1.21038V2.25256H8.49998V1.21216H0.169983V16.8301H14.7475V9.54216H13.7054Z" fill="black"/>
+                    <path d="M4.33496 9.54215V12.665H7.45956L16.83 3.29464L13.7054 0.170044L4.33496 9.54215ZM15.3646 3.28614L7.06006 11.6246L5.37706 11.6178L5.38216 9.96885L13.7207 1.62864L15.3646 3.28614Z" fill="black"/>
+                    <path d="M13.0169 6.41756L13.7054 5.72906L11.271 3.29468L10.5825 3.98317L13.0169 6.41756Z" fill="black"/>
+                    </g>
+                </svg>
+            </div>
+            
+            <div class='org-cabinet'>
+                <p>В кабинет организатора</p>
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.5 1L15 8.5L7.5 16" stroke="#4D4D4D" stroke-width="2"/>
+                </svg>
+            </div>
+            
+            <div class='sub-title'>
+                Фотопроекты, в которых я участвую
+            </div>
+        </div>
+        
+        <div class='card-info'>
+            <div class='tags-and-status'>
+                <div class='tags'>
+                    <p>Для пар</p>
+                    <svg width="4" height="3" viewBox="0 0 4 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="2.04688" cy="1.5" r="1.5" fill="#FF4546" fill-opacity="0.8"/>
+                    </svg>
+                    <p>На природе</p>
+                </div>
+                <div class='status'>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 7.05567L4.5 12.6066L13.5 1.00012" stroke="#FF4546"/>
+                    </svg>
+                    <p>Заявка отправлена</p>
+                </div>
+            </div>
+            
+            <div class='card-info-title'>
+                Зимняя Love Story
+            </div>
+            
+            <div class='card-info-city'>
+                <p class='city'>Город:</p>
+                <p class='city-name'>Москва</p>
+            </div>
+            
+            <div class='card-img'></div>
+            <div class='geo-pos'>
+                <svg width="16" height="23" viewBox="0 0 16 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 8C15 9.34323 14.5613 10.8519 13.8426 12.4036C13.1282 13.946 12.1663 15.4691 11.189 16.8241C10.2136 18.1764 9.23595 19.343 8.50148 20.1721C8.31743 20.3799 8.14896 20.5661 8 20.7283C7.85104 20.5661 7.68257 20.3799 7.49852 20.1721C6.76405 19.343 5.78644 18.1764 4.81103 16.8241C3.83366 15.4691 2.8718 13.946 2.1574 12.4036C1.43872 10.8519 1 9.34323 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8Z" stroke="black" stroke-width="2"/>
+                    <circle cx="8.00003" cy="8.00001" r="2.88636" stroke="black" stroke-width="1.5"/>
+                </svg>
+                <div>
+                    м. Речной вокзал, ул. Фестивальная,<br> д.2, к. 3, кв. 61
+                </div>
+            </div>
+            
+            <div class='data-time'>
+                <div class='data'>
+                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2H3V5H7V2H12V5H16V2H19V18H0V2ZM17 6H2V16H17V6Z" fill="black"/>
+                        <rect x="4" width="2" height="4" fill="black"/>
+                        <rect x="13" width="2" height="4" fill="black"/>
+                        <rect x="10" y="6.99988" width="2" height="2" fill="black"/>
+                        <rect x="13" y="6.99988" width="2" height="2" fill="black"/>
+                        <rect x="10" y="9.99988" width="2" height="2" fill="black"/>
+                        <rect x="13" y="9.99988" width="2" height="2" fill="black"/>
+                        <rect x="4.00002" y="9.99988" width="2" height="2" fill="black"/>
+                        <rect x="7.00002" y="9.99988" width="2" height="2" fill="black"/>
+                        <rect x="10" y="12.9999" width="2" height="2" fill="black"/>
+                        <rect x="13" y="12.9999" width="2" height="2" fill="black"/>
+                        <rect x="4.00002" y="12.9999" width="2" height="2" fill="black"/>
+                        <rect x="7.00002" y="12.9999" width="2" height="2" fill="black"/>
+                    </svg>
+                    <div>
+                        22.09.2019, 30.09.2019
+                    </div>
+                </div>
+                
+                <div class='time'>
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 3.53687V10.6017H14" stroke="black" stroke-width="1.5"/>
+                        <circle cx="9.5" cy="9.5" r="8.5" stroke="black" stroke-width="2"/>
+                    </svg>
+                    
+                    <div>
+                        9:00–10:00, 12:00–19:00
+                    </div>
+                </div>
+            </div>
+            
+            <div class='count-hour'>
+                <div class='count'>
+                    <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.46347 13.6653C8.0524 13.7012 7.66908 13.858 7.37112 14.1114C6.95218 14.4672 6.71902 14.9197 6.63081 15.5502C6.59005 15.8542 6.5715 15.9105 6.48546 15.9822C6.29509 16.1469 6.23969 16.6328 6.3757 16.9814C6.46175 17.199 6.55345 17.304 6.69941 17.3454C6.76727 17.3614 6.79831 17.4238 6.85217 17.6493C7.03754 18.3873 7.37568 18.9837 7.75621 19.233C8.00032 19.3918 8.37005 19.5068 8.64466 19.5089C9.63938 19.5163 10.1606 19.0518 10.5546 17.8172C10.6233 17.6027 10.6806 17.4182 10.682 17.4065C10.683 17.3988 10.7258 17.3962 10.7754 17.4022C10.9701 17.4257 11.2261 17.0737 11.2692 16.7192C11.3062 16.4147 11.1665 16.003 11.0252 15.9857C10.9985 15.9825 10.9719 15.9128 10.9704 15.8305C10.9285 14.8989 10.5034 14.1903 9.79155 13.8615C9.55275 13.7541 9.42531 13.7192 9.1079 13.6846C8.89422 13.659 8.60459 13.6512 8.46347 13.6653Z" fill="black"/>
+                        <path d="M10.3578 19.494C10.2839 19.528 10.1854 19.606 10.1431 19.6674C10.1009 19.7287 9.99772 19.8453 9.92146 19.9298C9.65065 20.2136 9.10281 20.3229 8.34217 20.2383C7.79143 20.1793 7.6082 20.0943 7.34931 19.7699C7.04694 19.3891 6.88221 19.3419 6.49517 19.5293C6.19084 19.6759 5.84598 19.8024 5.37179 19.9442C4.65242 20.1578 4.23395 20.4472 4.04116 20.8538C3.96852 21.0054 3.94625 21.1238 3.92097 21.5234C3.914 21.5185 3.86839 22.7174 3.86839 22.7174L8.66164 22.7758C8.65446 22.7743 13.4603 22.8339 13.4603 22.8339C13.4603 22.8339 13.4791 21.6921 13.4723 21.6944C13.4648 20.767 13.1515 20.4121 12.0089 20.027C11.7449 19.9362 11.361 19.7802 11.1599 19.6814C10.6855 19.4439 10.5347 19.41 10.3578 19.494Z" fill="black"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9863 11.944L1.73295 11.8883L1.65973 24.0561L15.9131 24.1118L15.9863 11.944ZM0.0932541 10.2173L3.3982e-06 25.7143L17.5528 25.7829L17.6461 10.2859L0.0932541 10.2173Z" fill="black"/>
+                        <path d="M12.4581 12.5194C12.605 12.4275 12.7476 12.3246 12.8855 12.2129C13.471 11.7383 13.9995 11.0807 14.443 10.3271C14.8343 9.6622 15.1679 8.90796 15.4183 8.11261C15.6688 8.90796 16.0024 9.6622 16.3936 10.3271C16.8371 11.0807 17.3656 11.7383 17.9512 12.2129C18.0979 12.3318 18.2501 12.4407 18.407 12.537C18.2385 12.6564 18.077 12.7909 17.9233 12.9355C17.3454 13.4794 16.8235 14.2166 16.3858 15.0176C16.016 15.6943 15.6955 16.437 15.4492 17.1774C15.1957 16.36 14.8515 15.5591 14.4471 14.8454C14.0067 14.0683 13.4817 13.3708 12.9001 12.8615C12.7584 12.7374 12.6108 12.6223 12.4581 12.5194Z" fill="white" stroke="black"/>
+                        <path d="M19.0199 5.01418C19.1008 4.96092 19.1796 4.90291 19.256 4.84097C19.6512 4.52067 20.0066 4.07799 20.304 3.57254C20.5462 3.16094 20.7555 2.69838 20.9183 2.21017C21.0812 2.69838 21.2904 3.16094 21.5326 3.57254C21.8301 4.07799 22.1854 4.52067 22.5806 4.84097C22.6633 4.90796 22.7487 4.97035 22.8365 5.02711C22.7404 5.09858 22.648 5.17696 22.5597 5.26001C22.1703 5.62656 21.8198 6.12204 21.5267 6.65842C21.2992 7.07483 21.0993 7.52894 20.9402 7.9852C20.7746 7.47925 20.5581 6.98602 20.3071 6.54306C20.012 6.02228 19.6592 5.55318 19.267 5.20963C19.1875 5.14 19.105 5.07444 19.0199 5.01418Z" fill="white" stroke="black" stroke-width="0.75"/>
+                    </svg>
+                    <div>10 шт.</div>
+                </div>
+                
+                <div class='hour'>
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 0H9.5C14.7467 0 19 4.25329 19 9.5C19 14.7467 14.7467 19 9.5 19C4.25329 19 0 14.7467 0 9.5C0 6.76778 0.942271 4.46483 2.78742 2.73305L4.27734 4.11719C2.81816 5.48672 2 7.34287 2 9.5C2 13.6421 5.35786 17 9.5 17C13.6421 17 17 13.6421 17 9.5C17 5.69692 14.1694 2.55498 10.5 2.06609V4.57895H8.5V0Z" fill="black"/>
+                        <path d="M10.3705 10.5L3 4" stroke="black" stroke-width="1.5"/>
+                    </svg>
+                    <div>1 час</div>
+                </div>
+            </div>
+            
+            <div class='money'>
+                <div class='pre-money'>
+                    <p>Предоплата:</p>
+                    <div>2500 р.</div>
+                </div>
+                <div class='full'>5000 р.</div>
+            </div>
+            
+            <button class='btn1 btn btn-outline-danger'>Написать организатору</button>
+            
+            <button class='btn2 btn btn-outline-danger'>Подробнее</button>
+            
+            <div class='bottom-line'></div>
+            
+        </div>
+        
+        <div class='canceled'>
+            <p>Отмененные</p>
+            <div></div>
+        </div>
+
+    </body>
+</html>
